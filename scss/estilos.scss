@@ -1,0 +1,57 @@
+/**
+ * Colors
+ */
+$primary: #3e7a5f;
+$verde-oscuro: #648855;
+$negro: #1d161e;
+$fondo-gris: #f1eeee;
+$verde-claro: #219c48;
+$verde-claro-2: #d2eed9;
+$blanco: #fff;
+
+/**
+ * Button
+ */
+$btn-padding-y: 0.4rem;
+$btn-padding-x: 1.5rem;
+$btn-border-radius: 1.3rem;
+$btn-font-size: 20px;
+
+/**
+ * Fonts
+ */
+$font-family-sans-serif: 'DM Sans', sans-serif;
+
+/**
+* Carousel
+*/
+$carousel-control-color: $negro;
+
+/**
+* Headings
+*/
+$headings-color: $negro;
+
+/**
+ * Imports
+ */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import '../libs/bootstrap/scss/bootstrap';
+
+/* Home */
+@import '../scss/pages/home';
+
+/* Layouts */
+@import '../scss/layout/footer';
+@import '../scss/layout/header';
+
+h2 {
+    font-size: 60px;
+    font-weight: bold;
+
+    strong {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        -webkit-text-fill-color: transparent;
+    }
+}

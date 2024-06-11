@@ -1,0 +1,332 @@
+.carouselHero {
+    .carousel-caption {
+        top: 40%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.2);
+        border-radius: 100%;
+        width: 45px;
+        height: 45px;
+        background-size: 50%;
+    }
+
+    .slider-novedades {
+        &__title {
+            font-size: 2.5rem;
+            color: $verde-oscuro;
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+
+            strong {
+                color: $negro;
+                display: block;
+                text-transform: uppercase;
+                font-size: 90px;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            top: -80px;
+            left: 0;
+        }
+
+        &__text {
+            text-align: center;
+            font-size: 23px;
+            color: $verde-oscuro;
+        }
+    }
+}
+
+.bg-gray {
+    background-color: $fondo-gris;
+}
+
+.confi-carousel,
+.aliados-carousel {
+    display: block !important;
+    text-align: center;
+
+    img {
+        max-height: 100px;
+        object-fit: contain;
+        width: 150px !important;
+    }
+
+    .owl-stage {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nuestros-proyectos {
+    background-image: url(../images/nuestros_proyectos.webp);
+    position: relative;
+
+    &:before {
+        content: '';
+        background: rgb(3, 3, 3);
+        background: -moz-linear-gradient(
+            90deg,
+            rgba(3, 3, 3, 0.700717787114846) 14%,
+            rgba(8, 41, 4, 0.6) 32%,
+            rgba(13, 79, 4, 0.05) 94%
+        );
+        background: -webkit-linear-gradient(
+            90deg,
+            rgba(3, 3, 3, 0.700717787114846) 14%,
+            rgba(8, 41, 4, 0.6) 32%,
+            rgba(13, 79, 4, 0.05) 94%
+        );
+        background: linear-gradient(
+            90deg,
+            rgba(3, 3, 3, 0.700717787114846) 14%,
+            rgba(8, 41, 4, 0.6) 32%,
+            rgba(13, 79, 4, 0.05) 94%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#030303",endColorstr="#0d4f04",GradientType=1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__item {
+        padding: 30px;
+        text-align: center;
+        border-radius: 20px;
+        color: $blanco;
+        background-color: rgba($verde-oscuro, $alpha: 0.7);
+        width: 400px;
+        margin-bottom: 20px;
+
+        h3 {
+            font-size: 60px;
+            font-weight: bold;
+            text-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+            color: $blanco;
+        }
+
+        p {
+            font-size: 25px;
+            font-weight: bold;
+            color: $blanco;
+            text-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+        }
+
+        &.item1 {
+            background-color: rgba($color: #0d4f04, $alpha: 0.7);
+        }
+
+        &.item3 {
+            background-color: rgba($color: #5ab978, $alpha: 0.7);
+            margin-top: 50px;
+        }
+
+        &.item2 {
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+    }
+}
+
+.btn-claro {
+    background-color: $verde-claro;
+    color: $blanco;
+    border-color: $verde-claro;
+}
+
+.white-text {
+    color: $blanco;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $blanco;
+
+        strong {
+            -webkit-text-stroke-color: $blanco;
+        }
+    }
+}
+
+.miembros-img {
+    background-color: $blanco;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border: 2px solid $primary;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.aliados-carousel {
+    display: block !important;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    pointer-events: none;
+
+    button {
+        pointer-events: all;
+    }
+}
+
+.ultimas-noticias {
+    padding-top: 60px;
+    padding-bottom: 140px;
+    overflow: hidden;
+    position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        background-image: url(../images/circle.svg);
+        width: 250px;
+        height: 250px;
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+    }
+
+    &:before {
+        right: 150px;
+    }
+
+    &:after {
+        left: -100px;
+        bottom: -100px;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    h2 {
+        color: $primary;
+        margin-bottom: 70px;
+
+        strong {
+            -webkit-text-stroke-color: $primary;
+        }
+    }
+
+    &__item {
+        padding: 20px;
+        border-radius: 20px;
+        background-color: $blanco;
+        transition: all 0.6s ease;
+
+        &:hover {
+            box-shadow: 0 5px 20px rgba($color: #000000, $alpha: 0.16);
+        }
+
+        img {
+            width: 100%;
+            max-height: 170px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        span {
+            display: block;
+            color: #666666;
+            font-size: 16px;
+        }
+
+        h3 {
+            font-size: 25px;
+            color: $primary;
+        }
+
+        a {
+            font-size: 20px;
+            font-weight: bold;
+            color: #666666;
+            transition: all 0.6s ease;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.somos-miembros {
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+        content: '';
+        background-image: url(../images/circle.svg);
+        width: 250px;
+        height: 250px;
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: -100px;
+        left: -100px;
+    }
+}
+
+.quienes-confian {
+    overflow: hidden;
+    position: relative;
+    padding: 70px 0;
+
+    &:before {
+        content: '';
+        background-image: url(../images/circle.svg);
+        width: 350px;
+        height: 250px;
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: -100px;
+        right: -100px;
+    }
+}
