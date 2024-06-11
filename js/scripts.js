@@ -2,7 +2,7 @@
     setTimeout(() => {
         $('.aliados-carousel').owlCarousel({
             loop: true,
-            dots: false,
+            dots: true,
             nav: true,
             autoplay: true,
             responsive: {
@@ -37,3 +37,11 @@
         })
     }, 500)
 })(jQuery)
+
+const scrollMenu = () => {
+    const menu = document.querySelector('.site-header')
+
+    menu.classList.toggle('scrolled', window.scrollY > 0)
+}
+
+window.addEventListener('scroll', scrollMenu)

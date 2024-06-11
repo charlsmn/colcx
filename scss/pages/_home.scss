@@ -52,6 +52,13 @@
     display: block !important;
     text-align: center;
 
+    .owl-item {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     img {
         max-height: 100px;
         object-fit: contain;
@@ -67,6 +74,23 @@
 .nuestros-proyectos {
     background-image: url(../images/nuestros_proyectos.webp);
     position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 45%;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="662" height="12" viewBox="0 0 662 12" fill="none"><path d="M652 7L662 11.7735V0.226497L652 5V7ZM653 5L0 5V7L653 7V5Z" fill="%235AB978"/></svg>');
+        width: 450px;
+        height: 12px;
+        background-position: right;
+
+        z-index: 0;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+    }
 
     &:before {
         content: '';
@@ -180,7 +204,7 @@
         position: absolute;
         top: 10px;
         left: 10px;
-        border: 2px solid $primary;
+        border: 2px solid #5ab978;
         border-radius: 20px;
         width: 100%;
         height: 100%;
@@ -244,7 +268,6 @@
 
     h2 {
         color: $primary;
-        margin-bottom: 70px;
 
         strong {
             -webkit-text-stroke-color: $primary;
@@ -292,6 +315,10 @@
     }
 }
 
+.linea-izquierda {
+    margin-bottom: 30px;
+}
+
 .somos-miembros {
     overflow: hidden;
     position: relative;
@@ -328,5 +355,40 @@
         position: absolute;
         top: -100px;
         right: -100px;
+    }
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #befcd1;
+}
+
+.owl-next,
+.owl-prev {
+    font-size: 60px !important;
+    color: #815350 !important;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background-color: transparent !important;
+    padding: 5px;
+}
+
+.owl-dots {
+    margin-top: 20px;
+
+    button {
+        span {
+            background: #5ab978 !important;
+            opacity: 0.5;
+        }
+
+        &.active {
+            span {
+                opacity: 1;
+            }
+        }
     }
 }

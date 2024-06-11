@@ -5,7 +5,17 @@
     width: 100%;
     z-index: 999;
 
+    &.scrolled {
+        .site-header__top {
+            height: 0;
+        }
+    }
+
     &__top {
+        height: 47px;
+        transition: height 0.6s ease;
+        overflow: hidden;
+
         .container {
             position: relative;
             display: flex;
