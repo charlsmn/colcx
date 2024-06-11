@@ -13578,17 +13578,17 @@ textarea.form-control-lg {
 .white-text .h6 {
   color: #fff;
 }
-.white-text h1 strong, .white-text .h1 strong,
-.white-text h2 strong,
-.white-text .h2 strong,
-.white-text h3 strong,
-.white-text .h3 strong,
-.white-text h4 strong,
-.white-text .h4 strong,
-.white-text h5 strong,
-.white-text .h5 strong,
-.white-text h6 strong,
-.white-text .h6 strong {
+.white-text h1 .text-border, .white-text .h1 .text-border,
+.white-text h2 .text-border,
+.white-text .h2 .text-border,
+.white-text h3 .text-border,
+.white-text .h3 .text-border,
+.white-text h4 .text-border,
+.white-text .h4 .text-border,
+.white-text h5 .text-border,
+.white-text .h5 .text-border,
+.white-text h6 .text-border,
+.white-text .h6 .text-border {
   -webkit-text-stroke-color: #fff;
 }
 
@@ -14006,7 +14006,8 @@ h2, .h2 {
   font-size: 60px;
   font-weight: bold;
 }
-h2 strong, .h2 strong {
+
+.text-border {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   -webkit-text-fill-color: transparent;

@@ -49,10 +49,10 @@ $headings-color: $negro;
 h2 {
     font-size: 60px;
     font-weight: bold;
+}
 
-    strong {
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
-        -webkit-text-fill-color: transparent;
-    }
+.text-border {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: transparent;
 }
