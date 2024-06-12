@@ -45,3 +45,13 @@ const scrollMenu = () => {
 }
 
 window.addEventListener('scroll', scrollMenu)
+
+const toggleMenu = () => {
+    const burger = document.querySelector('.burger')
+    const menuMovil = document.querySelector('.header-movil__menu')
+
+    menuMovil.classList.toggle('active')
+    burger.classList.toggle('active')
+}
+
+document.querySelector('.burger').addEventListener('click', toggleMenu)

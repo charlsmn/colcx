@@ -1,6 +1,11 @@
 .carouselHero {
     .carousel-caption {
         top: 40%;
+
+        @include mq_down($tablet) {
+            position: initial;
+            margin-bottom: 50px;
+        }
     }
 
     .carousel-control-prev-icon,
@@ -21,11 +26,19 @@
             font-weight: bold;
             font-size: 50px;
 
+            @include mq_down($md) {
+                font-size: 30px;
+            }
+
             strong {
                 color: $negro;
                 display: block;
                 text-transform: uppercase;
                 font-size: 90px;
+
+                @include mq_down($md) {
+                    font-size: 50px;
+                }
             }
         }
 
@@ -33,12 +46,22 @@
             position: absolute;
             top: -80px;
             left: 0;
+
+            @include mq_down($md) {
+                width: 15%;
+                position: inherit;
+            }
         }
 
         &__text {
             text-align: center;
             font-size: 23px;
             color: $verde-oscuro;
+
+            @include mq_down($md) {
+                font-size: 16px;
+                padding: 0 20px;
+            }
         }
     }
 }
@@ -84,8 +107,12 @@
         width: 450px;
         height: 12px;
         background-position: right;
-
         z-index: 0;
+
+        @include mq_down($md) {
+            top: 10%;
+            width: 80%;
+        }
     }
 
     h2 {
@@ -132,8 +159,12 @@
         border-radius: 20px;
         color: $blanco;
         background-color: rgba($verde-oscuro, $alpha: 0.7);
-        width: 400px;
+        width: 300px;
         margin-bottom: 20px;
+
+        @include mq_down($tablet) {
+            width: 100%;
+        }
 
         h3 {
             font-size: 60px;
@@ -161,6 +192,10 @@
         &.item2 {
             margin-top: 50px;
             margin-left: 50px;
+
+            @include mq_down($tablet) {
+                margin-left: 0;
+            }
         }
     }
 }
@@ -187,6 +222,14 @@
         }
     }
 }
+.nuestros-proyectos-items {
+    display: flex;
+
+    @include mq_down($xl) {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+}
 
 .miembros-img {
     background-color: $blanco;
@@ -198,6 +241,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
+    @include mq_down($md) {
+        min-height: 150px;
+    }
 
     &:before {
         content: '';
@@ -212,6 +259,10 @@
 
     img {
         max-width: 100%;
+
+        @include mq_down($md) {
+            max-width: 80%;
+        }
     }
 }
 
@@ -280,6 +331,10 @@
         background-color: $blanco;
         transition: all 0.6s ease;
 
+        @include mq_down($md) {
+            margin-bottom: 20px;
+        }
+
         &:hover {
             box-shadow: 0 5px 20px rgba($color: #000000, $alpha: 0.16);
         }
@@ -317,6 +372,10 @@
 
 .linea-izquierda {
     margin-bottom: 30px;
+
+    @include mq_down($md) {
+        display: none;
+    }
 }
 
 .somos-miembros {
@@ -342,6 +401,11 @@
     overflow: hidden;
     position: relative;
     padding: 70px 0;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
 
     &:before {
         content: '';

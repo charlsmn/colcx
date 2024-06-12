@@ -14,12 +14,20 @@
 
     h3 {
         margin-bottom: 10px;
+
+        @include mq_down($md) {
+            margin-top: 20px;
+        }
     }
 
     .copy {
         color: #815350;
         padding: 13px;
         background-color: #fff;
+
+        @include mq_down($md) {
+            margin-top: 20px;
+        }
 
         p {
             margin: 0;
