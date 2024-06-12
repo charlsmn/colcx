@@ -1,6 +1,7 @@
 .carouselHero {
     .carousel-caption {
         top: 40%;
+        left: auto !important;
 
         @include mq_down($tablet) {
             position: initial;
