@@ -1,6 +1,11 @@
 .carouselHero {
     .carousel-caption {
         top: 40%;
+        left: auto !important;
+
+        @include mq_down($xl) {
+            left: 15% !important;
+        }
 
         @include mq_down($tablet) {
             top: 18%;
