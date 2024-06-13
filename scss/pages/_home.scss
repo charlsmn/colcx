@@ -1,15 +1,12 @@
 .carouselHero {
     .carousel-caption {
         top: 40%;
-        left: auto !important;
-
-        @include mq_down($xl) {
-            left: 15% !important;
-        }
+        left: 0 !important;
+        right: 0 !important;
+        justify-content: center !important;
 
         @include mq_down($tablet) {
             top: 18%;
-            left: 15% !important;
         }
     }
 
