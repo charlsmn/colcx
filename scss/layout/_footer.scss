@@ -1,5 +1,24 @@
 .site-footer {
-    background-color: $primary;
+    background: rgb(62, 122, 95);
+    background: -moz-linear-gradient(
+        90deg,
+        rgba(62, 122, 95, 1) 15%,
+        rgba(62, 122, 95, 1) 51%,
+        rgba(15, 124, 75, 1) 83%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(62, 122, 95, 1) 15%,
+        rgba(62, 122, 95, 1) 51%,
+        rgba(15, 124, 75, 1) 83%
+    );
+    background: linear-gradient(
+        90deg,
+        rgba(62, 122, 95, 1) 15%,
+        rgba(62, 122, 95, 1) 51%,
+        rgba(15, 124, 75, 1) 83%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3e7a5f",endColorstr="#0f7c4b",GradientType=1);
     padding-top: 26px;
 
     .marca {
@@ -77,5 +96,14 @@
         &:before {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M11.291 21.706L12 21zM12 21l.708.706a1 1 0 0 1-1.417 0l-.006-.007l-.017-.017l-.062-.063a47.708 47.708 0 0 1-1.04-1.106a49.562 49.562 0 0 1-2.456-2.908c-.892-1.15-1.804-2.45-2.497-3.734C4.535 12.612 4 11.248 4 10c0-4.539 3.592-8 8-8c4.408 0 8 3.461 8 8c0 1.248-.535 2.612-1.213 3.87c-.693 1.286-1.604 2.585-2.497 3.735a49.583 49.583 0 0 1-3.496 4.014l-.062.063l-.017.017l-.006.006zm0-8a3 3 0 1 0 0-6a3 3 0 0 0 0 6' clip-rule='evenodd'/%3E%3C/svg%3E");
         }
+    }
+
+    .siguenos-lista {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
     }
 }
