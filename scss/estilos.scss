@@ -70,10 +70,14 @@ $headings-color: $negro;
 
 /* Home */
 @import '../scss/pages/home';
+@import '../scss/pages/nosotros';
+@import '../scss/pages/noticias';
+@import '../scss/pages/equipo';
 
 /* Layouts */
 @import '../scss/layout/footer';
 @import '../scss/layout/header';
+@import '../scss/layout/hero-section';
 
 h2 {
     font-size: 60px;
@@ -88,4 +92,8 @@ h2 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     -webkit-text-fill-color: transparent;
+}
+
+body {
+    background-color: $fondo-gris;
 }

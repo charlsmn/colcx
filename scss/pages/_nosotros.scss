@@ -1,0 +1,219 @@
+.white-box-green-border {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    min-height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 40px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border: 2px solid #5ab978;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        margin-top: -80px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+
+    &-color {
+        &-red {
+            p strong {
+                color: #de4768;
+            }
+
+            &.timeline-middle {
+                background-color: #de4768;
+                &:before {
+                    border-color: #aa3073;
+                }
+            }
+        }
+
+        &-orange {
+            p strong {
+                color: #f77703;
+            }
+
+            &.timeline-middle {
+                background-color: #f9ad01;
+                &:before {
+                    border-color: #f77703;
+                }
+            }
+        }
+
+        &-green {
+            p strong {
+                color: #618c15;
+            }
+
+            &.timeline-middle {
+                background-color: #9fc914;
+                &:before {
+                    border-color: #618c15;
+                }
+
+                &__2019-extra:after {
+                    background-color: #9fc914;
+                }
+            }
+        }
+
+        &-blue-light {
+            p strong {
+                color: #189b9b;
+            }
+
+            &.timeline-middle {
+                background-color: #1ed3b0;
+                &:before {
+                    border-color: #189b9b;
+                }
+            }
+        }
+
+        &-blue {
+            p strong {
+                color: #4aadff;
+            }
+
+            &.timeline-middle {
+                background-color: #4aadff;
+                &:before {
+                    border-color: #297acc;
+                }
+            }
+        }
+
+        &-green-dark {
+            p strong {
+                color: #09a334;
+            }
+
+            &.timeline-middle {
+                background-color: #09a334;
+                &:before {
+                    border-color: #1ed351;
+                }
+            }
+        }
+
+        &-purple {
+            p strong {
+                color: #6c33c4;
+            }
+
+            &.timeline-middle {
+                background-color: #8936ff;
+                &:before {
+                    border-color: #6c33c4;
+                }
+            }
+        }
+    }
+
+    &-img {
+        position: relative;
+
+        img {
+            margin-top: -20px;
+        }
+    }
+
+    &-content {
+        padding: 0 20px;
+        padding-bottom: 20px;
+
+        &__2019-extra {
+            margin-top: -30px;
+        }
+
+        p {
+            strong {
+                display: block;
+                font-size: 23px;
+            }
+        }
+    }
+
+    &-middle {
+        width: 10px;
+        height: 100%;
+        background-color: $primary;
+        position: relative;
+
+        &__2019-extra {
+            position: relative;
+
+            &:before {
+                display: none;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: -9px;
+                top: -19px;
+                width: 10px;
+                height: 2px;
+            }
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 10px;
+            border-radius: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border: 2px solid red;
+            z-index: 2;
+        }
+    }
+}
+
+.politicas {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 30px;
+
+    li {
+        margin-bottom: 20px;
+
+        a {
+            text-decoration: none;
+            color: #666666;
+            font-size: 25px;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}

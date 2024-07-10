@@ -1,0 +1,284 @@
+.equipo-item {
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    width: 250px;
+    gap: 10px;
+    border-radius: 100px;
+    height: 90px;
+    padding: 10px;
+    color: $blanco;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 500;
+
+    img {
+        height: 80px;
+        width: 80px;
+        object-fit: contain;
+        object-position: left;
+    }
+
+    &__peq {
+        height: 70px;
+
+        @include mq_down($md) {
+            margin: 10px 0;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    &__verde {
+        background: rgb(62, 122, 95);
+        background: -moz-linear-gradient(
+            110deg,
+            rgba(62, 122, 95, 1) 0%,
+            rgba(77, 187, 129, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+            110deg,
+            rgba(62, 122, 95, 1) 0%,
+            rgba(77, 187, 129, 1) 100%
+        );
+        background: linear-gradient(
+            110deg,
+            rgba(62, 122, 95, 1) 0%,
+            rgba(77, 187, 129, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3e7a5f",endColorstr="#4dbb81",GradientType=1);
+    }
+
+    &__rosa {
+        background: rgb(222, 71, 104);
+        background: -moz-linear-gradient(
+            110deg,
+            rgba(222, 71, 104, 1) 0%,
+            rgba(228, 133, 153, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+            110deg,
+            rgba(222, 71, 104, 1) 0%,
+            rgba(228, 133, 153, 1) 100%
+        );
+        background: linear-gradient(
+            110deg,
+            rgba(222, 71, 104, 1) 0%,
+            rgba(228, 133, 153, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#de4768",endColorstr="#e48599",GradientType=1);
+    }
+
+    &__naranja {
+        background: rgb(219, 76, 25);
+        background: -moz-linear-gradient(
+            110deg,
+            rgba(219, 76, 25, 1) 0%,
+            rgba(229, 156, 37, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+            110deg,
+            rgba(219, 76, 25, 1) 0%,
+            rgba(229, 156, 37, 1) 100%
+        );
+        background: linear-gradient(
+            110deg,
+            rgba(219, 76, 25, 1) 0%,
+            rgba(229, 156, 37, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#db4c19",endColorstr="#e59c25",GradientType=1);
+    }
+
+    &__azul {
+        background: rgb(52, 177, 162);
+        background: -moz-linear-gradient(
+            110deg,
+            rgba(52, 177, 162, 1) 0%,
+            rgba(13, 112, 100, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+            110deg,
+            rgba(52, 177, 162, 1) 0%,
+            rgba(13, 112, 100, 1) 100%
+        );
+        background: linear-gradient(
+            110deg,
+            rgba(52, 177, 162, 1) 0%,
+            rgba(13, 112, 100, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#34b1a2",endColorstr="#0d7064",GradientType=1);
+    }
+}
+
+.punto {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.linea {
+    height: 30px;
+    width: 1px;
+    background-color: #585857;
+
+    &__larga {
+        height: 100px;
+    }
+
+    &__horizontal {
+        height: 1px;
+        width: 100%;
+    }
+}
+
+.equipo-lista {
+    border-left: 1px solid #585857;
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 10px;
+
+    li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.equipo-col-gerencia {
+    border-left: 1px solid #585857;
+}
+
+.equipo-row-linea {
+    padding: 0;
+}
+
+.equipo-last {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.box-equipo {
+    background-color: $blanco;
+    border-radius: 16px;
+    padding: 16px;
+    padding-left: 66px;
+    position: relative;
+    margin-left: 80px;
+
+    @include mq_down($md) {
+        margin-left: 0;
+        margin-bottom: 40px;
+        padding-left: 16px;
+    }
+
+    &-forma {
+        width: 100px;
+        height: 40px;
+        border-radius: 40px;
+        position: absolute;
+        left: -46px;
+        top: 48px;
+
+        @include mq_down($md) {
+            top: -30px;
+            left: 0;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        color: #1d161e;
+    }
+
+    p {
+        color: #666666;
+        margin-bottom: 0;
+    }
+}
+
+.equipo-white-box {
+    width: 70% !important;
+    margin: 0 auto;
+
+    @include mq_down($md) {
+        width: 100% !important;
+    }
+
+    h3 {
+        color: #666666;
+        margin-bottom: 0;
+    }
+}
+
+.equipo-card {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+
+    &:hover {
+        .equipo-card__content {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($color: #3e7a5f, $alpha: 0.9);
+        text-align: center;
+        padding: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.6s ease;
+
+        p {
+            margin: 0;
+            font-size: 15px;
+            color: $blanco !important;
+        }
+    }
+
+    &-section {
+        text-align: center;
+
+        h3 {
+            margin: 0;
+            color: #666666;
+            margin-top: 15px;
+        }
+
+        p {
+            margin: 0;
+            color: #666666;
+        }
+    }
+}
