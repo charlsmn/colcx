@@ -55,3 +55,20 @@ const toggleMenu = () => {
 }
 
 document.querySelector('.burger').addEventListener('click', toggleMenu)
+
+const submenuMovil = () => {
+    const hasSubMenu = document.querySelectorAll('.has-submenu')
+
+    hasSubMenu.forEach((item) => {
+        const subMenuIcon = item.querySelector('svg')
+
+        subMenuIcon.addEventListener('click', () => {
+            subMenuIcon.classList.toggle('active')
+
+            const subMenu = item.querySelector('.has-submenu ul')
+            subMenu.classList.toggle('active')
+        })
+    })
+}
+
+submenuMovil()
