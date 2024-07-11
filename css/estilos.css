@@ -14576,6 +14576,24 @@ textarea.form-control-lg {
   z-index: -1;
 }
 
+.linea-equipo-rosa {
+  position: relative;
+}
+.linea-equipo-rosa:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 90%;
+  height: 1px;
+  border-top: 1px dashed #585857;
+}
+
 /* Layouts */
 .site-footer {
   background: rgb(62, 122, 95);
