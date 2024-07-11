@@ -91,6 +91,10 @@
             rgba(229, 156, 37, 1) 100%
         );
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#db4c19",endColorstr="#e59c25",GradientType=1);
+
+        @include mq_down($md) {
+            margin-right: 20%;
+        }
     }
 
     &__azul {
@@ -162,6 +166,20 @@
     align-items: center;
     gap: 10px;
     margin-top: 100px;
+
+    @include mq_down($md) {
+        display: none;
+    }
+
+    &__movil {
+        @include mq_up($md) {
+            display: none !important;
+        }
+
+        .equipo-item {
+            margin-right: 20%;
+        }
+    }
 }
 
 .box-equipo {
@@ -174,7 +192,7 @@
 
     @include mq_down($md) {
         margin-left: 0;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         padding-left: 16px;
     }
 
@@ -187,14 +205,18 @@
         top: 48px;
 
         @include mq_down($md) {
-            top: -30px;
-            left: 0;
+            top: 6px;
+            left: 13px;
         }
     }
 
     h3 {
         font-size: 20px;
         color: #1d161e;
+
+        @include mq_down($md) {
+            margin-left: 110px;
+        }
     }
 
     p {
@@ -269,6 +291,11 @@
 
     &-section {
         text-align: center;
+
+        @include mq_down($md) {
+            max-width: 80%;
+            margin: 15px auto;
+        }
 
         h3 {
             margin: 0;

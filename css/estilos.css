@@ -14323,6 +14323,11 @@ textarea.form-control-lg {
   background: linear-gradient(110deg, rgb(219, 76, 25) 0%, rgb(229, 156, 37) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#db4c19",endColorstr="#e59c25",GradientType=1);
 }
+@media only screen and (max-width: 768px) {
+  .equipo-item__naranja {
+    margin-right: 20%;
+  }
+}
 .equipo-item__azul {
   background: rgb(52, 177, 162);
   background: linear-gradient(110deg, rgb(52, 177, 162) 0%, rgb(13, 112, 100) 100%);
@@ -14383,6 +14388,19 @@ textarea.form-control-lg {
   gap: 10px;
   margin-top: 100px;
 }
+@media only screen and (max-width: 768px) {
+  .equipo-last {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .equipo-last__movil {
+    display: none !important;
+  }
+}
+.equipo-last__movil .equipo-item {
+  margin-right: 20%;
+}
 
 .box-equipo {
   background-color: #fff;
@@ -14395,7 +14413,7 @@ textarea.form-control-lg {
 @media only screen and (max-width: 768px) {
   .box-equipo {
     margin-left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding-left: 16px;
   }
 }
@@ -14409,13 +14427,18 @@ textarea.form-control-lg {
 }
 @media only screen and (max-width: 768px) {
   .box-equipo-forma {
-    top: -30px;
-    left: 0;
+    top: 6px;
+    left: 13px;
   }
 }
 .box-equipo h3, .box-equipo .h3 {
   font-size: 20px;
   color: #1d161e;
+}
+@media only screen and (max-width: 768px) {
+  .box-equipo h3, .box-equipo .h3 {
+    margin-left: 110px;
+  }
 }
 .box-equipo p {
   color: #666666;
@@ -14489,6 +14512,12 @@ textarea.form-control-lg {
 }
 .equipo-card-section {
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .equipo-card-section {
+    max-width: 80%;
+    margin: 15px auto;
+  }
 }
 .equipo-card-section h3, .equipo-card-section .h3 {
   margin: 0;
