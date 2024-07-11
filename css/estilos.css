@@ -14952,6 +14952,7 @@ textarea.form-control-lg {
   margin-top: 156px;
   overflow: hidden;
   margin-bottom: 30px;
+  position: relative;
 }
 @media only screen and (max-width: 1280px) {
   .hero-interna {
@@ -14961,6 +14962,35 @@ textarea.form-control-lg {
 @media only screen and (max-width: 768px) {
   .hero-interna {
     padding-top: 20px;
+  }
+  .hero-interna .col-md-4 {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    z-index: 9;
+    text-align: center;
+  }
+  .hero-interna .col-md-8 {
+    position: relative;
+  }
+  .hero-interna .col-md-8:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+  }
+  .hero-interna .col-md-8 img {
+    height: 250px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .hero-interna h1, .hero-interna .h1 {
