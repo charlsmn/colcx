@@ -110,12 +110,14 @@
                     >
                         <ul class="lang">
                             <li>
-                                <a href="./index.html" class="lang-active"
+                                <a
+                                    href="./nuestro-programa.html"
+                                    class="lang-active"
                                     >ESP</a
                                 >
                             </li>
                             <li>
-                                <a href="./en/index.html">ENG</a>
+                                <a href="./en/our-program.html">ENG</a>
                             </li>
                         </ul>
                         <div class="burger">
@@ -126,8 +128,34 @@
                 <div class="row header-movil__menu">
                     <div class="col-12">
                         <ul>
-                            <li class="current-menu-item">
-                                <a href="./nosotros.html">Nosotros</a>
+                            <li class="current-menu-item has-submenu">
+                                <a href="#!">Nosotros</a>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="25"
+                                    height="25"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        fill="none"
+                                        stroke="white"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="m7 10l5 5l5-5"
+                                    />
+                                </svg>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="./nuestro-programa.html"
+                                            >Nuestro Programa</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="./noticias.html">Noticias</a>
+                                    </li>
+                                    <li><a href="./equipo.html">Equipo</a></li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="">Certificaciones</a>
@@ -170,7 +198,17 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="objetivos-programa">
+                <img
+                    src="./images/circulo-objetivo.svg"
+                    alt=""
+                    class="circulo-objetivo-1"
+                />
+                <img
+                    src="./images/circulo-objetivo2.svg"
+                    alt=""
+                    class="circulo-objetivo-2"
+                />
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -189,7 +227,7 @@
                                 </svg>
                                 <strong>¿Qué es COLCX?</strong>
                             </h3>
-                            <p>
+                            <p class="justificado">
                                 COLCX es un programa de certificación creado por
                                 Canal Clima SAS que busca contribuir a los
                                 objetivos de mitigación por medio de un estándar
@@ -263,9 +301,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h2>
+                            <h2 class="subtitulo-verde">
                                 Hitos
-                                <strong class="text-border"
+                                <strong class="subtitulo-borde"
                                     >Importantes COLCX</strong
                                 >
                             </h2>
@@ -286,7 +324,7 @@
                         ></path>
                     </svg>
                 </div>
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
                         <div class="col-md-4">
                             <img
@@ -336,7 +374,7 @@
                                     <img src="./images/2019.png" alt="" />
                                 </div>
                                 <div
-                                    class="timeline-middle timeline-color-green"
+                                    class="timeline-middle timeline-color-green timeline-middle__2019-extra-2"
                                 ></div>
                                 <div
                                     class="timeline-content timeline-color-green"
@@ -434,10 +472,14 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="timeline-middle timeline-color-red"
+                                    class="timeline-middle timeline-color-red timeline-middle__2024-extra"
                                 ></div>
                                 <div class="timeline-img">
                                     <img src="./images/2024.png" alt="" />
+                                    <p class="extra-p-2024">
+                                        Implementación de un nuevo Sistema de
+                                        Registro en Alianza con XM
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -465,22 +507,24 @@
                             </h3>
                         </div>
                         <div class="col-md-9">
-                            <div class="row text-center">
-                                <div class="col-md-4">
+                            <div
+                                class="row text-center certificados-carousel owl-carousel owl-theme"
+                            >
+                                <div class="certificado-item">
                                     <img src="./images/ISO_14001.jpg" alt="" />
                                     <p>
                                         Gestión Ambiental bajo la NTC ISO
                                         14001:2015
                                     </p>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="certificado-item">
                                     <img src="./images/ISO_9001.jpg" alt="" />
                                     <p>
                                         Gestión de la Calidad bajo la NTC ISO
                                         9001:2015
                                     </p>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="certificado-item">
                                     <img src="./images/ISO_45001.jpg" alt="" />
                                     <p>
                                         Gestión de la Seguridad y Salud en el
