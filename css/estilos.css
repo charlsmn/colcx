@@ -14226,6 +14226,7 @@ textarea.form-control-lg {
   background-color: #e5fbea;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-bottom: 0 !important;
 }
 .hero-single-post .container {
   max-width: 896px;
@@ -14267,6 +14268,30 @@ textarea.form-control-lg {
   font-weight: bold;
   margin-top: 20px;
   display: block;
+}
+
+.noticia-section {
+  position: relative;
+}
+.noticia-section .circulo-noticias-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .noticia-section .circulo-noticias-1 {
+    display: none;
+  }
+}
+.noticia-section .circulo-noticias-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .noticia-section .circulo-noticias-2 {
+    display: none;
+  }
 }
 
 .equipo-item {
@@ -14527,6 +14552,28 @@ textarea.form-control-lg {
 .equipo-card-section p {
   margin: 0;
   color: #666666;
+}
+
+.equipo-organigrama {
+  position: relative;
+}
+.equipo-organigrama .circulo-equipo1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.equipo-organigrama .circulo-equipo2 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: -1;
+}
+.equipo-organigrama .circulo-equipo3 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -1;
 }
 
 /* Layouts */
