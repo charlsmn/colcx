@@ -54,6 +54,22 @@
                 },
             },
         })
+
+        $('.carousel-contacto').owlCarousel({
+            loop: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                780: {
+                    items: 1,
+                },
+                1000: {
+                    items: 1,
+                },
+            },
+        })
     }, 500)
 })(jQuery)
 
@@ -91,3 +107,66 @@ const submenuMovil = () => {
 }
 
 submenuMovil()
+
+const pqrAnonima = () => {
+    const checkbox = document.getElementById('anonima')
+    const div = document.querySelector('.anonima-nombre')
+
+    if (checkbox && div) {
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                div.style = 'display: none'
+            } else {
+                div.style = 'display: block'
+            }
+        })
+    }
+}
+
+pqrAnonima()
+
+const formTabs = () => {
+    const menuFormTabs = document.querySelectorAll('.form-menu li')
+    const formContainers = document.querySelectorAll('.form-content > div')
+
+    const activateTab = (index) => {
+        menuFormTabs.forEach((item) => {
+            item.classList.remove('active')
+        })
+
+        formContainers.forEach((item) => {
+            item.classList.remove('active')
+        })
+
+        menuFormTabs[index].classList.add('active')
+        formContainers[index].classList.add('active')
+    }
+
+    const urlParams = new URLSearchParams(window.location.search)
+    const tabParam = urlParams.get('tab')
+
+    if (tabParam) {
+        activateTab(1)
+    }
+
+    menuFormTabs.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            activateTab(index)
+        })
+    })
+}
+
+formTabs()
+
+const adjuntarDocumento = () => {
+    const adjuntarInput = document.querySelector('.adjuntar-doc input')
+    const fileName = document.querySelector('.adjuntar-doc span')
+
+    if (adjuntarInput) {
+        adjuntarInput.addEventListener('change', () => {
+            fileName.textContent = adjuntarInput.files[0].name
+        })
+    }
+}
+
+adjuntarDocumento()

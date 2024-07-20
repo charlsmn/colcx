@@ -41,6 +41,16 @@ $carousel-control-color: $negro;
 */
 $headings-color: $negro;
 
+/**
+ * Accordion
+ */
+
+$accordion-bg: transparent;
+$accordion-button-bg: $blanco;
+$accordion-button-focus-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+$accordion-button-active-bg: $blanco;
+$accordion-button-active-color: $primary;
+
 // Mobile First
 @mixin mq_up($screen_width) {
     @media only screen and (min-width : #{$screen_width}) {
@@ -73,6 +83,8 @@ $headings-color: $negro;
 @import '../scss/pages/nosotros';
 @import '../scss/pages/noticias';
 @import '../scss/pages/equipo';
+@import '../scss/pages/contacto';
+@import '../scss/pages/preguntas';
 
 /* Layouts */
 @import '../scss/layout/footer';

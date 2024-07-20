@@ -1,0 +1,32 @@
+.accordion-item {
+    margin-bottom: 15px;
+    border-bottom: 0;
+}
+
+.accordion-header {
+    button {
+        border-radius: 16px !important;
+        overflow: hidden;
+        font-weight: 600;
+        font-size: 20px;
+        color: $primary;
+    }
+}
+
+.accordion {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        border-left: 2px dashed #219c48;
+    }
+}
+
+.accordion-body {
+    padding-left: 60px;
+}
