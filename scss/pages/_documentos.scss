@@ -1,0 +1,198 @@
+.documentos-tabs {
+    background-color: $blanco;
+    border-radius: 16px;
+
+    &__menu {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        border: 1px solid #3e7a5f;
+        overflow: hidden;
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+
+        @include mq_down($md) {
+            overflow-x: scroll;
+        }
+
+        li {
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            transition: all 0.6s ease;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #3e7a5f;
+
+                h3 {
+                    color: $blanco;
+                }
+            }
+
+            &.active {
+                background-color: $primary;
+
+                h3 {
+                    color: $blanco;
+                }
+            }
+
+            h3 {
+                margin: 0;
+                color: $primary;
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+        display: none;
+
+        &.active {
+            display: table;
+        }
+
+        th {
+            background-color: #e5fbea;
+            color: $primary;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        thead {
+            vertical-align: middle;
+        }
+
+        img {
+            width: 30px;
+        }
+    }
+}
+
+.card-document {
+    display: flex;
+
+    &__wrapper {
+        padding: 22px;
+        display: flex;
+        flex-flow: wrap;
+        border: 2px solid #219c48;
+        border-radius: 16px;
+        background-color: $blanco;
+
+        @include mq_down($md) {
+            margin-bottom: 20px;
+        }
+    }
+
+    a {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        align-items: center;
+
+        &:hover {
+            > img {
+                transform: scale(1.05);
+            }
+        }
+
+        > img {
+            width: 70px;
+            transition: all 0.3s ease;
+        }
+
+        span {
+            color: #219c48;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+
+    h3 {
+        width: 100%;
+        font-size: 16px;
+        color: #666666;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}
+
+.comunicado-card {
+    background-color: rgba($color: #d3e3d6, $alpha: 0.6);
+    padding: 20px;
+    padding-left: 30px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: wrap;
+
+    h2 {
+        color: #219c48;
+        opacity: 0.7;
+        margin: 0;
+    }
+
+    &__info {
+        width: 60%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        span {
+            color: #949494;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #3e7a5f;
+        }
+    }
+
+    &__enlaces {
+        width: 40%;
+        border-left: 3px solid $blanco;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: #219c48;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 16px;
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    .comunicado-tipo {
+        position: absolute;
+        top: -15px;
+        left: 30px;
+        background-color: #219c48;
+        color: $blanco;
+        border-radius: 30px;
+        padding: 4px 20px;
+        font-size: 14px;
+    }
+}
