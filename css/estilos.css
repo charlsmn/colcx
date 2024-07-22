@@ -14351,11 +14351,6 @@ textarea.form-control-lg {
   background: linear-gradient(110deg, rgb(219, 76, 25) 0%, rgb(229, 156, 37) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#db4c19",endColorstr="#e59c25",GradientType=1);
 }
-@media only screen and (max-width: 768px) {
-  .equipo-item__naranja {
-    margin-right: 20%;
-  }
-}
 .equipo-item__azul {
   background: rgb(52, 177, 162);
   background: linear-gradient(110deg, rgb(52, 177, 162) 0%, rgb(13, 112, 100) 100%);
@@ -14621,6 +14616,83 @@ textarea.form-control-lg {
   width: 90%;
   height: 1px;
   border-top: 1px dashed #585857;
+}
+
+.equipo-item-movil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 20px 10px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  line-height: 12px;
+  min-height: 148px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.equipo-item-movil img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.equipo-movil .row {
+  position: relative;
+}
+.equipo-movil .row:before {
+  content: "";
+  position: absolute;
+  left: 16%;
+  height: 110%;
+  width: 1px;
+  background-color: #1d161e;
+  z-index: -1;
+}
+.equipo-movil .row:first-child:before {
+  display: none;
+}
+.equipo-movil .row:last-child:before {
+  display: none;
+}
+.equipo-movil .row .asesoria {
+  position: relative;
+}
+.equipo-movil .row .asesoria:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  height: 110%;
+  width: 2px;
+  border: 1px dashed #585857;
+  z-index: -1;
+}
+.equipo-movil .row .flecha {
+  position: relative;
+}
+.equipo-movil .row .flecha:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -11px;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 21'%3E%3Cpath fill='none' stroke='%231d161e' stroke-linecap='round' stroke-linejoin='round' d='m13.5 6.497l4 4.002l-4 4.001m-9-4h13'/%3E%3C/svg%3E");
 }
 
 .form-container {
