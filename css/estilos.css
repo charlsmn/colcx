@@ -14708,6 +14708,11 @@ form .mid {
   width: 48%;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 768px) {
+  form .mid {
+    width: 100%;
+  }
+}
 form input,
 form select,
 form textarea {
@@ -14791,9 +14796,19 @@ form label a {
   font-size: 25px;
   color: #fff;
 }
+@media only screen and (max-width: 768px) {
+  .lista-contacto li {
+    font-size: 17px;
+  }
+}
 .lista-contacto li a {
   color: #fff;
   text-decoration: none;
+}
+
+label[for=acepta],
+label[for=acepta-pqr] {
+  display: inline;
 }
 
 .horario-contacto {
@@ -14802,6 +14817,11 @@ form label a {
   padding: 10px 15px;
   font-size: 20px;
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .horario-contacto {
+    font-size: 17px;
+  }
 }
 
 .contacto-info {
@@ -14882,6 +14902,34 @@ form label a {
 .documentos-tabs {
   background-color: #fff;
   border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .documentos-tabs::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgb(255, 255, 255)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+    pointer-events: none;
+  }
+  .documentos-tabs::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23219C48' d='m20.08 11.42l-4.04-5.65c-.34-.48-.89-.77-1.48-.77c-1.49 0-2.35 1.68-1.49 2.89L16 12l-2.93 4.11c-.87 1.21 0 2.89 1.49 2.89c.59 0 1.15-.29 1.49-.77l4.04-5.65c.24-.35.24-.81-.01-1.16'/%3E%3Cpath fill='%23219C48' d='M13.08 11.42L9.05 5.77C8.7 5.29 8.15 5 7.56 5C6.07 5 5.2 6.68 6.07 7.89L9 12l-2.93 4.11C5.2 17.32 6.07 19 7.56 19c.59 0 1.15-.29 1.49-.77l4.04-5.65c.24-.35.24-.81-.01-1.16'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
 }
 .documentos-tabs__menu {
   display: -webkit-box;
@@ -14910,6 +14958,11 @@ form label a {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .documentos-tabs__menu li {
+    padding: 20px 30px;
+  }
 }
 .documentos-tabs__menu li:hover {
   background-color: #3e7a5f;
@@ -14964,6 +15017,7 @@ form label a {
   border: 2px solid #219c48;
   border-radius: 16px;
   background-color: #fff;
+  min-height: 234px;
 }
 @media only screen and (max-width: 768px) {
   .card-document__wrapper {
@@ -14988,6 +15042,17 @@ form label a {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
+}
+.card-document a:hover .fileImage {
+  background-image: url('data:image/svg+xml,<svg width="54" height="67" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16 63.882V15.03L13.781 2.366h37.29v61.516H1.16Z" fill="%233E7A5F"/><path d="M15.855 0a5.756 5.756 0 0 0-4.11 1.728L1.695 11.971A5.98 5.98 0 0 0 0 16.16v46.539c0 1.96 1.559 3.549 3.482 3.549h46.429c1.923 0 3.482-1.589 3.482-3.55V3.55c0-1.961-1.559-3.55-3.483-3.55H15.855Zm.395 2.366h33.66c.641 0 1.161.53 1.161 1.183v59.15c0 .653-.52 1.183-1.16 1.183H3.482c-.64 0-1.16-.53-1.16-1.183V16.562h10.446c1.923 0 3.482-1.589 3.482-3.55V2.367Zm-2.321.591v10.056c0 .653-.52 1.183-1.161 1.183H2.902c.129-.196.277-.38.442-.545l10.05-10.243c.162-.168.342-.32.535-.45Zm-8.125 51.46c-.641 0-1.161.53-1.161 1.184v2.366c0 .653.52 1.183 1.16 1.183.641 0 1.161-.53 1.161-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.803 0c-.64 0-1.16.53-1.16 1.184v2.366c0 .653.52 1.183 1.16 1.183.64 0 1.16-.53 1.16-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.804 0c-.641 0-1.161.53-1.161 1.184v2.366c0 .653.52 1.183 1.16 1.183.641 0 1.161-.53 1.161-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.803 0c-.64 0-1.16.53-1.16 1.184v2.366c0 .653.52 1.183 1.16 1.183.641 0 1.161-.53 1.161-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.804 0c-.64 0-1.16.53-1.16 1.184v2.366c0 .653.52 1.183 1.16 1.183.64 0 1.16-.53 1.16-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.803 0c-.64 0-1.16.53-1.16 1.184v2.366c0 .653.52 1.183 1.16 1.183.641 0 1.161-.53 1.161-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.804 0c-.64 0-1.16.53-1.16 1.184v2.366c0 .653.52 1.183 1.16 1.183.64 0 1.16-.53 1.16-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.804 0c-.641 0-1.161.53-1.161 1.184v2.366c0 .653.52 1.183 1.16 1.183.641 0 1.161-.53 1.161-1.183V55.6c0-.653-.52-1.183-1.16-1.183Z" fill="%23D2EED9"/></svg>');
+}
+.card-document a .fileImage {
+  width: 50px;
+  height: 60px;
+  background-image: url('data:image/svg+xml,<svg width="54" height="67" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16 63.882V15.03L13.781 2.366h37.29v61.516H1.16Z" fill="%23fff"/><path d="M15.855 0a5.756 5.756 0 0 0-4.11 1.728L1.695 11.971A5.98 5.98 0 0 0 0 16.16v46.539c0 1.96 1.559 3.549 3.482 3.549h46.429c1.923 0 3.482-1.589 3.482-3.55V3.55C53.393 1.589 51.834 0 49.91 0H15.855Zm.395 2.366h33.66c.641 0 1.161.53 1.161 1.183v59.15c0 .653-.52 1.183-1.16 1.183H3.482c-.64 0-1.16-.53-1.16-1.183V16.562h10.446c1.923 0 3.482-1.589 3.482-3.55V2.367Zm-2.321.591v10.056c0 .653-.52 1.183-1.161 1.183H2.902c.129-.196.277-.38.442-.545l10.05-10.243c.162-.168.342-.32.535-.45Zm-8.125 51.46c-.641 0-1.161.53-1.161 1.184v2.366c0 .653.52 1.183 1.16 1.183.641 0 1.161-.53 1.161-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.803 0c-.64 0-1.16.53-1.16 1.184v2.366c0 .653.52 1.183 1.16 1.183.64 0 1.16-.53 1.16-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.804 0c-.641 0-1.161.53-1.161 1.184v2.366c0 .653.52 1.183 1.16 1.183.641 0 1.161-.53 1.161-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.803 0c-.64 0-1.16.53-1.16 1.184v2.366c0 .653.52 1.183 1.16 1.183.641 0 1.161-.53 1.161-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.804 0c-.64 0-1.16.53-1.16 1.184v2.366c0 .653.52 1.183 1.16 1.183.64 0 1.16-.53 1.16-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.803 0c-.64 0-1.16.53-1.16 1.184v2.366c0 .653.52 1.183 1.16 1.183.641 0 1.161-.53 1.161-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.804 0c-.64 0-1.16.53-1.16 1.184v2.366c0 .653.52 1.183 1.16 1.183.64 0 1.16-.53 1.16-1.183V55.6c0-.653-.52-1.183-1.16-1.183Zm5.804 0c-.641 0-1.161.53-1.161 1.184v2.366c0 .653.52 1.183 1.16 1.183.641 0 1.161-.53 1.161-1.183V55.6c0-.653-.52-1.183-1.16-1.183Z" fill="%233E7A5F"/></svg>');
+  background-repeat: no-repeat;
+  background-size: 50px 60px;
+  background-position: center;
 }
 .card-document a > img {
   width: 70px;
@@ -15027,6 +15092,14 @@ form label a {
   -ms-flex-flow: wrap;
       flex-flow: wrap;
 }
+@media only screen and (max-width: 768px) {
+  .comunicado-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .comunicado-card h2, .comunicado-card .h2 {
   color: #219c48;
   opacity: 0.7;
@@ -15041,6 +15114,11 @@ form label a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .comunicado-card__info {
+    width: 100%;
+  }
 }
 .comunicado-card__info span {
   color: #949494;
@@ -15063,6 +15141,18 @@ form label a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .comunicado-card__enlaces {
+    width: 100%;
+    border-left: 0;
+    border-top: 3px solid #fff;
+    margin-top: 10px;
+    padding-top: 10px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 .comunicado-card__enlaces a {
   text-decoration: none;
@@ -15092,6 +15182,43 @@ form label a {
   border-radius: 30px;
   padding: 4px 20px;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-document-carousel {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+}
+.card-document-carousel.owl-carousel {
+  display: block;
+}
+.card-document-carousel img {
+  width: 20px !important;
+}
+.card-document-carousel .owl-stage-outer {
+  padding: 0 !important;
+}
+
+.circulo-documentos-1 {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  z-index: -1;
+}
+
+.circulo-documentos-2 {
+  position: absolute;
+  top: 70%;
+  left: -100px;
+  z-index: -1;
+}
+
+.circulo-documentos-3 {
+  position: absolute;
+  bottom: 0;
+  right: -100px;
+  z-index: -1;
 }
 
 /* Layouts */

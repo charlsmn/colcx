@@ -84,6 +84,10 @@ form {
     .mid {
         width: 48%;
         margin-bottom: 10px;
+
+        @include mq_down($md) {
+            width: 100%;
+        }
     }
 
     input,
@@ -151,11 +155,20 @@ form {
         font-size: 25px;
         color: $blanco;
 
+        @include mq_down($md) {
+            font-size: 17px;
+        }
+
         a {
             color: $blanco;
             text-decoration: none;
         }
     }
+}
+
+label[for='acepta'],
+label[for='acepta-pqr'] {
+    display: inline;
 }
 
 .horario-contacto {
@@ -164,6 +177,10 @@ form {
     padding: 10px 15px;
     font-size: 20px;
     position: relative;
+
+    @include mq_down($md) {
+        font-size: 17px;
+    }
 }
 
 .contacto-info {

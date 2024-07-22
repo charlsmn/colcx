@@ -55,16 +55,16 @@ const data = {
     ],
     design: [
         {
-            nombre: 'Documento de diseño',
-            responsable: 'Desarrollador',
+            nombre: 'Design document',
+            responsable: 'Developer',
             version: 'V1.0',
             descargaes: './pdf/test.pdf',
             descargaen: './pdf/test.pdf',
             idioma: 'en',
         },
         {
-            nombre: 'Solicitud de renovación de periodo de acreditación COLCX',
-            responsable: 'Desarrollador',
+            nombre: 'Application for renewal of accreditation period COLCX',
+            responsable: 'Developer',
             version: 'V1.0',
             descargaes: './pdf/test.pdf',
             descargaen: './pdf/test.pdf',
@@ -91,7 +91,7 @@ const data = {
     ],
     validation: [
         {
-            nombre: 'Declaración de no conflicto de intereses COLCX',
+            nombre: 'Declaration of no conflict of interest COLCX',
             responsable: 'OVV',
             version: 'V1.0',
             descargaes: './pdf/test.pdf',
@@ -99,7 +99,7 @@ const data = {
             idioma: 'en',
         },
         {
-            nombre: 'Documento de reporte de validación',
+            nombre: 'Validation report document',
             responsable: 'OVV',
             version: 'V1.0',
             descargaes: './pdf/test.pdf',
@@ -127,7 +127,7 @@ const data = {
     ],
     certification: [
         {
-            nombre: 'Formato de solicitud de aclaraciones',
+            nombre: 'Clarification request form',
             responsable: 'Desarrollador',
             version: 'V1.0',
             descargaes: './pdf/test.pdf',
@@ -135,7 +135,7 @@ const data = {
             idioma: 'en',
         },
         {
-            nombre: 'Formato de solicitud de emisión Verificación COLCX',
+            nombre: 'COLCX Verification Request for Issuance Form',
             responsable: 'Certificador',
             version: 'V1.0',
             descargaes: './pdf/test.pdf',
@@ -155,8 +155,8 @@ const data = {
     ],
     commercialization: [
         {
-            nombre: 'Solicitud de retiro ColCER colcx',
-            responsable: 'Desarrollador/Comercializador',
+            nombre: 'Withdrawal request ColCER colcx',
+            responsable: 'Developer/Marketer',
             version: 'V1.0',
             descargaes: './pdf/test.pdf',
             descargaen: './pdf/test.pdf',
