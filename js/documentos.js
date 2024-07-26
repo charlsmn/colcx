@@ -35,7 +35,7 @@ const data = {
             idioma: 'en',
         },
     ],
-    diseño: [
+    diseno: [
         {
             nombre: 'Documento de diseño',
             responsable: 'Desarrollador',
@@ -71,7 +71,7 @@ const data = {
             idioma: 'en',
         },
     ],
-    validación: [
+    validacion: [
         {
             nombre: 'Declaración de no conflicto de intereses COLCX',
             responsable: 'OVV',
@@ -107,7 +107,7 @@ const data = {
             idioma: 'en',
         },
     ],
-    certificación: [
+    certificacion: [
         {
             nombre: 'Formato de solicitud de aclaraciones',
             responsable: 'Desarrollador',
@@ -143,7 +143,7 @@ const data = {
             idioma: 'en',
         },
     ],
-    comercialización: [
+    comercializacion: [
         {
             nombre: 'Solicitud de retiro ColCER colcx',
             responsable: 'Desarrollador/Comercializador',
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     menuItems.forEach((menuItem) => {
-        const section = menuItem.textContent.trim().toLowerCase()
+        const section = menuItem.id
         if (contenidoDivEs) {
             const tableDataEs =
                 data[section]?.filter((row) => row.idioma === 'es') || []
