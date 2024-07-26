@@ -233,7 +233,7 @@
         justify-content: center;
         gap: 20px;
 
-        @include mq_down($md) {
+        @include mq_down($lg) {
             width: 100%;
             border-left: 0;
             border-top: 3px solid $blanco;
@@ -308,4 +308,10 @@
     bottom: 0;
     right: -100px;
     z-index: -1;
+}
+
+.comunicados-carousel {
+    &.owl-carousel {
+        display: flex;
+    }
 }

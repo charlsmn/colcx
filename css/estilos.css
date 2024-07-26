@@ -15222,7 +15222,7 @@ label[for=acepta-pqr] {
           justify-content: center;
   gap: 20px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .comunicado-card__enlaces {
     width: 100%;
     border-left: 0;
@@ -15299,6 +15299,12 @@ label[for=acepta-pqr] {
   bottom: 0;
   right: -100px;
   z-index: -1;
+}
+
+.comunicados-carousel.owl-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* Layouts */
