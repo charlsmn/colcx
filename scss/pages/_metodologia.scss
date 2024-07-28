@@ -1,0 +1,202 @@
+.metodologias-fondo-verde,
+.metodologias-fondo-blanco {
+    background: rgb(7, 45, 2);
+    background: -moz-linear-gradient(
+        90deg,
+        rgba(7, 45, 2, 1) 47%,
+        rgba(23, 147, 6, 0) 93%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(7, 45, 2, 1) 47%,
+        rgba(23, 147, 6, 0) 93%
+    );
+    background: linear-gradient(
+        90deg,
+        rgba(7, 45, 2, 1) 47%,
+        rgba(23, 147, 6, 0) 93%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#072d02",endColorstr="#179306",GradientType=1);
+    padding: 30px 40px;
+    position: relative;
+    margin-bottom: 30px;
+
+    @include mq_down($md) {
+        background: rgb(7, 45, 2);
+        background: -moz-linear-gradient(
+            180deg,
+            rgba(7, 45, 2, 1) 47%,
+            rgba(23, 147, 6, 0) 93%
+        );
+        background: -webkit-linear-gradient(
+            180deg,
+            rgba(7, 45, 2, 1) 47%,
+            rgba(23, 147, 6, 0) 93%
+        );
+        background: linear-gradient(
+            180deg,
+            rgba(7, 45, 2, 1) 47%,
+            rgba(23, 147, 6, 0) 93%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#072d02",endColorstr="#179306",GradientType=1);
+        padding: 20px;
+
+        .col-md-5 {
+            margin-bottom: 30px;
+        }
+    }
+
+    .fondo-metodologias {
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        object-fit: cover;
+        right: 0;
+        top: 0;
+        z-index: -1;
+
+        @include mq_down($md) {
+            width: 100%;
+            height: 50%;
+            bottom: 0;
+            top: initial;
+        }
+    }
+
+    h3 {
+        color: #f7fef9;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        color: #97cfa9;
+        text-align: justify;
+        margin-bottom: 0;
+    }
+}
+
+.tabla-metodologia {
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+    color: #666666;
+    font-size: 15px;
+    vertical-align: middle;
+
+    img {
+        width: 30px;
+    }
+
+    thead {
+        vertical-align: middle;
+    }
+
+    th {
+        padding: 10px;
+        background-color: $primary;
+        color: $blanco;
+        font-size: 15px;
+    }
+}
+
+p.proximamente {
+    width: 100%;
+    text-align: center;
+    background-color: rgba($blanco, $alpha: 0.7);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px 16px 0 0;
+    color: $negro;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 30px;
+    margin-bottom: 0;
+    border: 1px solid rgba($color: #0d4f04, $alpha: 0.7);
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.metodologias-fondo-blanco {
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 47%,
+        rgba(23, 147, 6, 0) 93%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 47%,
+        rgba(23, 147, 6, 0) 93%
+    );
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 47%,
+        rgba(23, 147, 6, 0) 93%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#179306",GradientType=1);
+
+    @include mq_down($md) {
+        background: rgb(255, 255, 255);
+        background: -moz-linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 1) 47%,
+            rgba(23, 147, 6, 0) 93%
+        );
+        background: -webkit-linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 1) 47%,
+            rgba(23, 147, 6, 0) 93%
+        );
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 1) 47%,
+            rgba(23, 147, 6, 0) 93%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#179306",GradientType=1);
+    }
+
+    h3 {
+        color: #0d4f04;
+    }
+
+    p {
+        color: #3e7a5f;
+    }
+}
+
+.tabla-borde {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid $primary;
+
+    table {
+        margin-bottom: 0;
+    }
+}
+
+.tabla-metodologias-grande {
+    thead {
+        th {
+            background-color: #e5fbea;
+            padding: 20px;
+            font-size: 25px;
+            color: $primary;
+            font-weight: 500;
+        }
+    }
+
+    tbody {
+        td {
+            padding: 20px;
+            color: #666666;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #666666;
+    }
+}
