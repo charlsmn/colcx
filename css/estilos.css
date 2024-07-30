@@ -14184,6 +14184,7 @@ textarea.form-control-lg {
   position: absolute;
   right: 0;
   top: 30%;
+  z-index: -1;
 }
 @media only screen and (max-width: 768px) {
   .circulo-objetivo-2 {
@@ -15307,6 +15308,10 @@ label[for=acepta-pqr] {
   display: flex;
 }
 
+.comunicados-carousel-escritorio.owl-carousel {
+  display: block;
+}
+
 .metodologias-fondo-verde,
 .metodologias-fondo-blanco {
   background: rgb(7, 45, 2);
@@ -15456,6 +15461,13 @@ p.proximamente {
 .tabla-metodologias-grande a {
   text-decoration: none;
   color: #666666;
+}
+
+img.bola-metodologias-aprobadas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /* Layouts */
@@ -15967,7 +15979,7 @@ p.proximamente {
   content: "";
   position: absolute;
   left: 0;
-  top: -62%;
+  top: -87px;
   width: 1px;
   height: 87px;
   background-color: #219c48;
