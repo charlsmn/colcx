@@ -75,6 +75,7 @@
             loop: false,
             autoplay: true,
             margin: 20,
+            nav: true,
             dots: true,
             responsive: {
                 0: {
@@ -221,3 +222,23 @@ const adjuntarDocumento = () => {
 }
 
 adjuntarDocumento()
+
+const documentHorizontalScroll = () => {
+    const tableResponsive = document.querySelector('.table-responsive')
+    const fatherTable = document.querySelector('.documentos-tabs > div')
+
+    if (tableResponsive && fatherTable) {
+        tableResponsive.addEventListener('scroll', () => {
+            if (
+                tableResponsive.scrollWidth - tableResponsive.scrollLeft ===
+                tableResponsive.clientWidth
+            ) {
+                fatherTable.classList.add('remove-arrow')
+            } else {
+                fatherTable.classList.remove('remove-arrow')
+            }
+        })
+    }
+}
+
+documentHorizontalScroll()
