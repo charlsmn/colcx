@@ -91,37 +91,41 @@
             },
         })
 
-        if (window.innerWidth < 768) {
-            $('.comunicados-carousel').owlCarousel({
-                loop: false,
-                autoplay: true,
-                margin: 20,
-                dots: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        margin: 0,
-                    },
+        $('.comunicados-carousel').owlCarousel({
+            loop: false,
+            autoplay: false,
+            margin: 20,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 0,
                 },
-            })
+                780: {
+                    items: 2,
+                },
+            },
+        })
+
+        if (window.innerWidth < 768) {
         }
 
-        if (window.innerWidth > 768) {
-            $('.comunicados-carousel-escritorio').owlCarousel({
-                loop: false,
-                autoplay: true,
-                margin: 20,
-                dots: true,
-                responsive: {
-                    780: {
-                        items: 1,
-                    },
-                    1000: {
-                        items: 1,
-                    },
-                },
-            })
-        }
+        // if (window.innerWidth > 768) {
+        //     $('.comunicados-carousel-escritorio').owlCarousel({
+        //         loop: false,
+        //         autoplay: true,
+        //         margin: 20,
+        //         dots: true,
+        //         responsive: {
+        //             780: {
+        //                 items: 1,
+        //             },
+        //             1000: {
+        //                 items: 4,
+        //             },
+        //         },
+        //     })
+        // }
     }, 500)
 })(jQuery)
 
