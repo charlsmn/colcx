@@ -338,6 +338,14 @@
     &.owl-carousel {
         display: flex;
     }
+
+    .owl-nav {
+        margin-top: 0;
+        width: 110% !important;
+        left: -5% !important;
+        max-width: 110%;
+        top: 41%;
+    }
 }
 
 .comunicados-carousel-escritorio {
