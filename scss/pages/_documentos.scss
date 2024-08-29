@@ -33,6 +33,7 @@
                 pointer-events: none;
                 transition: all 0.6s ease;
                 opacity: 1;
+                display: block !important;
             }
 
             &::after {
@@ -48,6 +49,7 @@
                 pointer-events: none;
                 transition: all 0.6s ease;
                 opacity: 1;
+                display: block !important;
             }
         }
     }
@@ -134,6 +136,11 @@
 
 .card-document {
     display: flex;
+
+    @include mq_down($md) {
+        max-width: 80%;
+        margin: 0 auto;
+    }
 
     &__wrapper {
         padding: 22px;

@@ -1,0 +1,209 @@
+.timeline-cards {
+    margin: 0 auto;
+    position: relative;
+
+    @include mq_up($md) {
+        max-width: 80%;
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    &::before {
+        @include mq_up($md) {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #5ab978;
+            margin: 0 auto;
+        }
+    }
+
+    .col-md-6 {
+        margin-bottom: 20px;
+        @include mq_up($md) {
+            margin-top: -40px;
+            margin-bottom: 0;
+        }
+    }
+
+    .offset-md-6 {
+        .timeline-cards__item {
+            @include mq_up($md) {
+                border-radius: 0 20px 20px 0;
+            }
+
+            svg {
+                right: auto;
+                left: -12px;
+                top: 50%;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__item {
+        background-color: $blanco;
+        padding: 13px;
+        border-radius: 20px;
+        position: relative;
+
+        @include mq_up($md) {
+            border-radius: 20px 0 0 20px;
+        }
+
+        svg {
+            position: absolute;
+            right: -12px;
+            top: 50%;
+            display: none;
+
+            @include mq_up($md) {
+                display: block;
+            }
+        }
+
+        .subrayado {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .head {
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 10px;
+            gap: 12px;
+
+            &__number {
+                background-color: #5ab978;
+                color: $blanco;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 16px 0 0 16px;
+                min-width: 70px;
+                height: 65px;
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            &__title {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h4 {
+                    font-size: 17px;
+                    color: #666;
+                    font-weight: 700;
+                    margin: 0;
+
+                    @include mq_up($md) {
+                        font-size: 20px;
+                    }
+                }
+
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.popupDocumentos {
+    position: absolute;
+    z-index: 999;
+    background-color: $primary;
+    padding: 20px;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #close-popup-documentos {
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        color: $blanco;
+        font-size: 15px;
+        list-style-type: none;
+
+        li {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.table-ovv {
+    border: 1px solid var(--borde, #666);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        text-align: center;
+        background-color: $blanco;
+    }
+
+    table {
+        margin-bottom: 0;
+
+        tr {
+            th {
+                border-bottom: 1px solid var(--borde, #666);
+                border-top: 1px solid var(--borde, #666);
+                font-size: 12px;
+                vertical-align: middle;
+                border-right: 1px solid var(--borde, #666);
+                background-color: var(--fondo, #f1eeee);
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+
+            td {
+                font-size: 11px;
+                color: #666;
+                border-right: 1px solid var(--borde, #666);
+
+                &:last-child {
+                    border-right: none;
+                }
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+
+                    li {
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

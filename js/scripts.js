@@ -80,7 +80,6 @@
             responsive: {
                 0: {
                     items: 1,
-                    margin: 0,
                 },
                 780: {
                     items: 1,
@@ -100,7 +99,6 @@
             responsive: {
                 0: {
                     items: 1,
-                    margin: 0,
                 },
                 780: {
                     items: 2,
@@ -247,3 +245,21 @@ const documentHorizontalScroll = () => {
 }
 
 documentHorizontalScroll()
+
+const popupDocumentos = () => {
+    const btnPopupDocumentos = document.getElementById('btnPopupDocumentos')
+    const popup = document.querySelector('.popupDocumentos')
+    const closePopup = document.getElementById('close-popup-documentos')
+
+    if (btnPopupDocumentos && popup) {
+        btnPopupDocumentos.addEventListener('click', () => {
+            popup.classList.add('active')
+        })
+
+        closePopup.addEventListener('click', () => {
+            popup.classList.remove('active')
+        })
+    }
+}
+
+popupDocumentos()
