@@ -92,7 +92,7 @@
 
         $('.comunicados-carousel').owlCarousel({
             loop: false,
-            autoplay: false,
+            autoplay: true,
             margin: 20,
             dots: true,
             nav: true,

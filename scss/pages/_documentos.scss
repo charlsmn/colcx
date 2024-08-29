@@ -138,7 +138,7 @@
     display: flex;
 
     @include mq_down($md) {
-        max-width: 80%;
+        max-width: 80% !important;
         margin: 0 auto;
     }
 
@@ -219,6 +219,9 @@
 
     @include mq_down($md) {
         flex-direction: column;
+        max-width: 80% !important;
+        margin: 0 auto;
+        margin-top: 20px;
     }
 
     h2 {
@@ -313,10 +316,14 @@
 
     .owl-nav {
         margin-top: 0;
-        width: 110% !important;
-        left: -5% !important;
+
         max-width: 110%;
         top: 41%;
+
+        @include mq_up($md) {
+            width: 110% !important;
+            left: -5% !important;
+        }
     }
 }
 

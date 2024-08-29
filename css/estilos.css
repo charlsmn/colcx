@@ -15105,7 +15105,7 @@ label[for=acepta-pqr] {
 }
 @media only screen and (max-width: 768px) {
   .card-document {
-    max-width: 80%;
+    max-width: 80% !important;
     margin: 0 auto;
   }
 }
@@ -15200,6 +15200,9 @@ label[for=acepta-pqr] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 80% !important;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }
 .comunicado-card h2, .comunicado-card .h2 {
@@ -15303,10 +15306,14 @@ label[for=acepta-pqr] {
 }
 .card-document-carousel .owl-nav {
   margin-top: 0;
-  width: 110% !important;
-  left: -5% !important;
   max-width: 110%;
   top: 41%;
+}
+@media only screen and (min-width: 768px) {
+  .card-document-carousel .owl-nav {
+    width: 110% !important;
+    left: -5% !important;
+  }
 }
 
 .circulo-documentos-1 {
