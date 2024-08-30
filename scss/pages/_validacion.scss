@@ -118,11 +118,17 @@
     position: absolute;
     z-index: 999;
     background-color: $primary;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease-in-out;
+
+    @include mq_up($md) {
+        top: -16px;
+        max-width: 480px;
+        right: -105px;
+    }
 
     &.active {
         visibility: visible;
@@ -180,6 +186,16 @@
                 border-right: 1px solid var(--borde, #666);
                 background-color: var(--fondo, #f1eeee);
                 color: var(--borde, #666);
+
+                &:nth-child(1),
+                &:nth-child(4) {
+                    width: 30%;
+                }
+
+                &:nth-child(2),
+                &:nth-child(3) {
+                    width: 20%;
+                }
 
                 &:last-child {
                     border-right: none;

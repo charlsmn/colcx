@@ -15651,12 +15651,19 @@ img.bola-metodologias-aprobadas {
   position: absolute;
   z-index: 999;
   background-color: #3e7a5f;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+@media only screen and (min-width: 768px) {
+  .popupDocumentos {
+    top: -16px;
+    max-width: 480px;
+    right: -105px;
+  }
 }
 .popupDocumentos.active {
   visibility: visible;
@@ -15713,6 +15720,12 @@ img.bola-metodologias-aprobadas {
   border-right: 1px solid var(--borde, #666);
   background-color: var(--fondo, #f1eeee);
   color: var(--borde, #666);
+}
+.table-ovv table tr th:nth-child(1), .table-ovv table tr th:nth-child(4) {
+  width: 30%;
+}
+.table-ovv table tr th:nth-child(2), .table-ovv table tr th:nth-child(3) {
+  width: 20%;
 }
 .table-ovv table tr th:last-child {
   border-right: none;
