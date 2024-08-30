@@ -179,6 +179,7 @@
                 vertical-align: middle;
                 border-right: 1px solid var(--borde, #666);
                 background-color: var(--fondo, #f1eeee);
+                color: var(--borde, #666);
 
                 &:last-child {
                     border-right: none;
@@ -206,4 +207,8 @@
             }
         }
     }
+}
+
+.section-procesos {
+    padding-bottom: 80px;
 }

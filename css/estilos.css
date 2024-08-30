@@ -15712,6 +15712,7 @@ img.bola-metodologias-aprobadas {
   vertical-align: middle;
   border-right: 1px solid var(--borde, #666);
   background-color: var(--fondo, #f1eeee);
+  color: var(--borde, #666);
 }
 .table-ovv table tr th:last-child {
   border-right: none;
@@ -15731,6 +15732,10 @@ img.bola-metodologias-aprobadas {
 }
 .table-ovv table tr td ul li {
   margin-bottom: 3px;
+}
+
+.section-procesos {
+  padding-bottom: 80px;
 }
 
 /* Layouts */
