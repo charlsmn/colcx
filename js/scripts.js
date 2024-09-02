@@ -74,7 +74,6 @@
         $('.card-document-carousel').owlCarousel({
             loop: false,
             autoplay: true,
-            margin: 20,
             nav: true,
             dots: true,
             responsive: {
@@ -86,6 +85,7 @@
                 },
                 1000: {
                     items: 4,
+                    margin: 20,
                 },
             },
         })
@@ -105,26 +105,6 @@
                 },
             },
         })
-
-        if (window.innerWidth < 768) {
-        }
-
-        // if (window.innerWidth > 768) {
-        //     $('.comunicados-carousel-escritorio').owlCarousel({
-        //         loop: false,
-        //         autoplay: true,
-        //         margin: 20,
-        //         dots: true,
-        //         responsive: {
-        //             780: {
-        //                 items: 1,
-        //             },
-        //             1000: {
-        //                 items: 4,
-        //             },
-        //         },
-        //     })
-        // }
     }, 500)
 })(jQuery)
 

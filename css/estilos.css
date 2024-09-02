@@ -15291,20 +15291,11 @@ label[for=acepta-pqr] {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 768px) {
-  .card-document-carousel {
-    padding-right: calc(var(--bs-gutter-x) * 0.5);
-    padding-left: calc(var(--bs-gutter-x) * 0.5);
-  }
-}
 .card-document-carousel.owl-carousel {
   display: block;
 }
 .card-document-carousel img {
   width: 20px !important;
-}
-.card-document-carousel .owl-stage-outer {
-  padding: 0 !important;
 }
 .card-document-carousel .owl-nav {
   margin-top: 0;
