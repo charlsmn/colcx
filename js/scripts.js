@@ -212,10 +212,14 @@ const documentHorizontalScroll = () => {
 
     if (tableResponsive && fatherTable) {
         tableResponsive.addEventListener('scroll', () => {
-            if (
-                tableResponsive.scrollWidth - tableResponsive.scrollLeft ===
-                tableResponsive.clientWidth
-            ) {
+            const isAtEnd =
+                Math.abs(
+                    tableResponsive.scrollWidth -
+                        tableResponsive.scrollLeft -
+                        tableResponsive.clientWidth
+                ) < 1 // margen de error
+
+            if (isAtEnd) {
                 fatherTable.classList.add('remove-arrow')
             } else {
                 fatherTable.classList.remove('remove-arrow')
@@ -252,7 +256,7 @@ const popupConsultasActivas = () => {
     const popup = document.getElementById('popup-consultas-activas')
     const closePopup = popup.querySelector('.general-popup__close')
 
-    if (popup && btnPopupConsultasActivas) {
+    if (popup && btnPopupConsultasActivas && closePopup) {
         btnPopupConsultasActivas.forEach((item) => {
             item.addEventListener('click', () => {
                 popup.classList.add('active')
