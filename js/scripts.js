@@ -233,10 +233,9 @@ documentHorizontalScroll()
 const popupDocumentos = () => {
     const btnPopupDocumentos = document.getElementById('btnPopupDocumentos')
     const popup = document.querySelector('.popupDocumentos')
+    const closePopup = document.getElementById('close-popup-documentos')
 
     if (btnPopupDocumentos && popup) {
-        const closePopup = document.getElementById('close-popup-documentos')
-
         btnPopupDocumentos.addEventListener('click', () => {
             popup.classList.add('active')
         })
@@ -255,9 +254,10 @@ const popupConsultasActivas = () => {
     )
     const body = document.querySelector('body')
     const popup = document.getElementById('popup-consultas-activas')
-    const closePopup = popup.querySelector('.general-popup__close')
 
-    if (popup && btnPopupConsultasActivas && closePopup) {
+    if (popup && btnPopupConsultasActivas) {
+        const closePopup = popup.querySelector('.general-popup__close')
+
         btnPopupConsultasActivas.forEach((item) => {
             item.addEventListener('click', () => {
                 popup.classList.add('active')
