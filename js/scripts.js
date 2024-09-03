@@ -71,25 +71,6 @@
             },
         })
 
-        $('.card-document-carousel').owlCarousel({
-            loop: false,
-            autoplay: true,
-            nav: true,
-            dots: true,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                780: {
-                    items: 1,
-                },
-                1000: {
-                    items: 4,
-                    margin: 20,
-                },
-            },
-        })
-
         $('.comunicados-carousel').owlCarousel({
             loop: false,
             autoplay: true,
@@ -103,6 +84,18 @@
                 780: {
                     items: 2,
                 },
+            },
+        })
+
+        $('.card-document-carousel').owlCarousel({
+            loop: false,
+            autoplay: true,
+            nav: true,
+            dots: true,
+            responsive: {
+                0: { items: 1 },
+                780: { items: 2, margin: 20 },
+                1000: { items: 3, margin: 20 },
             },
         })
     }, 500)
