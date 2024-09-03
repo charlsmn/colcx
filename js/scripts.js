@@ -243,3 +243,28 @@ const popupDocumentos = () => {
 }
 
 popupDocumentos()
+
+const popupConsultasActivas = () => {
+    const btnPopupConsultasActivas = document.querySelectorAll(
+        '.participar-consultas-activas'
+    )
+    const body = document.querySelector('body')
+    const popup = document.getElementById('popup-consultas-activas')
+    const closePopup = popup.querySelector('.general-popup__close')
+
+    if (popup && btnPopupConsultasActivas) {
+        btnPopupConsultasActivas.forEach((item) => {
+            item.addEventListener('click', () => {
+                popup.classList.add('active')
+                body.style.overflow = 'hidden'
+            })
+        })
+
+        closePopup.addEventListener('click', () => {
+            popup.classList.remove('active')
+            body.style.overflow = 'auto'
+        })
+    }
+}
+
+popupConsultasActivas()

@@ -1,0 +1,65 @@
+.tabla-verde {
+    border-radius: 16px 16px 0 0;
+    border: 1px solid $primary;
+    border-top: 0;
+
+    table {
+        margin-bottom: 0;
+    }
+
+    thead {
+        th {
+            background-color: $primary;
+            color: $blanco;
+            border-color: $primary;
+            font-weight: 500;
+            padding: 15px 0;
+
+            @include mq_up($md) {
+                font-size: 20px;
+            }
+
+            &:nth-child(1) {
+                width: 40%;
+            }
+        }
+    }
+}
+
+.table-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid $primary;
+    width: fit-content;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: $primary;
+    font-weight: 500;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.popup-consultas-activas-title {
+    text-align: center;
+    color: $primary;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    input {
+        margin-left: -6px;
+        height: 44px;
+        border: 0;
+        padding-left: 10px;
+        box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.1);
+        border-radius: 0 4px 4px 0;
+    }
+}

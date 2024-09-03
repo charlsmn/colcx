@@ -17,10 +17,14 @@
 /**
  * Accordion
  */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+.table > thead {
+  vertical-align: middle !important;
+}
+
 /**
  * Imports
  */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -15742,6 +15746,85 @@ img.bola-metodologias-aprobadas {
   padding-bottom: 80px;
 }
 
+.tabla-verde {
+  border-radius: 16px 16px 0 0;
+  border: 1px solid #3e7a5f;
+  border-top: 0;
+}
+.tabla-verde table {
+  margin-bottom: 0;
+}
+.tabla-verde thead th {
+  background-color: #3e7a5f;
+  color: #fff;
+  border-color: #3e7a5f;
+  font-weight: 500;
+  padding: 15px 0;
+}
+@media only screen and (min-width: 768px) {
+  .tabla-verde thead th {
+    font-size: 20px;
+  }
+}
+.tabla-verde thead th:nth-child(1) {
+  width: 40%;
+}
+
+.table-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #3e7a5f;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #3e7a5f;
+  font-weight: 500;
+}
+.table-action:hover {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.popup-consultas-activas-title {
+  text-align: center;
+  color: #3e7a5f;
+}
+
+.search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.search-bar input {
+  margin-left: -6px;
+  height: 44px;
+  border: 0;
+  padding-left: 10px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0 4px 4px 0;
+}
+
 /* Layouts */
 .site-footer {
   background: rgb(62, 122, 95);
@@ -16289,4 +16372,53 @@ h2, .h2 {
 
 body {
   background-color: #f1eeee;
+}
+
+.general-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+.general-popup.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-height: 800px) {
+  .general-popup.active {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    overflow-y: scroll;
+  }
+}
+.general-popup__wrapper {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.general-popup__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.general-popup__close img {
+  width: 60px;
 }/*# sourceMappingURL=estilos.css.map */
