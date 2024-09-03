@@ -233,9 +233,10 @@ documentHorizontalScroll()
 const popupDocumentos = () => {
     const btnPopupDocumentos = document.getElementById('btnPopupDocumentos')
     const popup = document.querySelector('.popupDocumentos')
-    const closePopup = document.getElementById('close-popup-documentos')
 
     if (btnPopupDocumentos && popup) {
+        const closePopup = document.getElementById('close-popup-documentos')
+
         btnPopupDocumentos.addEventListener('click', () => {
             popup.classList.add('active')
         })
