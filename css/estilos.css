@@ -15759,11 +15759,12 @@ img.bola-metodologias-aprobadas {
   color: #fff;
   border-color: #3e7a5f;
   font-weight: 500;
-  padding: 15px 0;
+  padding: 15px 25px;
 }
 @media only screen and (min-width: 768px) {
   .tabla-verde thead th {
     font-size: 20px;
+    padding: 15px;
   }
 }
 .tabla-verde thead th:nth-child(1) {

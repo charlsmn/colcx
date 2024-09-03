@@ -13,10 +13,11 @@
             color: $blanco;
             border-color: $primary;
             font-weight: 500;
-            padding: 15px 0;
+            padding: 15px 25px;
 
             @include mq_up($md) {
                 font-size: 20px;
+                padding: 15px;
             }
 
             &:nth-child(1) {
