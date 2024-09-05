@@ -15644,7 +15644,7 @@ img.bola-metodologias-aprobadas {
 
 .popupDocumentos {
   position: absolute;
-  z-index: 999;
+  z-index: 99;
   background-color: #3e7a5f;
   padding: 30px;
   border-radius: 10px;
