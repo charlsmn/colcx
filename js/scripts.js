@@ -266,3 +266,18 @@ const popupConsultasActivas = () => {
 }
 
 popupConsultasActivas()
+
+function ciclos() {
+    const ciclos = document.querySelectorAll('.ciclo-item')
+
+    ciclos.forEach((ciclo) => {
+        ciclo.addEventListener('click', () => {
+            ciclos.forEach((item) => item.classList.remove('active'))
+
+            // Agregar la clase 'active' solo al ciclo clicado
+            ciclo.classList.add('active')
+        })
+    })
+}
+
+ciclos()

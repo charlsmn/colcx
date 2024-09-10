@@ -1,0 +1,248 @@
+.ciclo-titulos {
+    position: sticky;
+    top: 120px;
+    text-align: center;
+    margin-bottom: 40px !important;
+    background-color: #f1eeee;
+    padding: 10px;
+    border-radius: 20px;
+    z-index: 99;
+
+    @include mq_down($md) {
+        top: 0;
+        position: relative;
+        display: none;
+    }
+
+    h3 {
+        font-size: 25px;
+        font-weight: bold;
+        color: $primary;
+        margin: 0;
+    }
+}
+
+.ciclo-item {
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 20px -20px;
+    min-height: 40px;
+    cursor: pointer;
+    position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        width: 16px;
+        height: 2px;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 30px;
+    }
+
+    &:after {
+        width: 2px;
+        height: 16px;
+        right: 37px;
+    }
+
+    &__subtitulo {
+        font-size: 17px;
+        font-weight: 600;
+        color: #000;
+    }
+
+    &.active {
+        cursor: auto;
+        .col-md-9 {
+            display: block;
+        }
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+
+    .col-md-9 {
+        padding: 10px 0;
+        display: none;
+        overflow: hidden;
+
+        @include mq_down($md) {
+            padding: 20px;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .row {
+        padding: 10px 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    &:nth-child(1) {
+        &:before,
+        &:after {
+            background-color: #0aa660;
+        }
+
+        .ciclo-item__titulo {
+            background-color: #0aa660;
+
+            &::before {
+                border-color: transparent transparent #047542 transparent;
+            }
+
+            &::after {
+                border-color: transparent transparent transparent #047542;
+            }
+        }
+    }
+
+    &:nth-child(2) {
+        &:before,
+        &:after {
+            background-color: #128551;
+        }
+
+        .ciclo-item__titulo {
+            background-color: #128551;
+
+            &::before {
+                border-color: transparent transparent #034e2c transparent;
+            }
+
+            &::after {
+                border-color: transparent transparent transparent #034e2c;
+            }
+        }
+    }
+
+    &:nth-child(3) {
+        &:before,
+        &:after {
+            background-color: #196844;
+        }
+
+        .ciclo-item__titulo {
+            background-color: #196844;
+
+            &::before {
+                border-color: transparent transparent #093e26 transparent;
+            }
+
+            &::after {
+                border-color: transparent transparent transparent #093e26;
+            }
+        }
+    }
+
+    &:nth-child(4) {
+        &:before,
+        &:after {
+            background-color: #224636;
+        }
+
+        .ciclo-item__titulo {
+            background-color: #224636;
+
+            &::before {
+                border-color: transparent transparent #112e21 transparent;
+            }
+
+            &::after {
+                border-color: transparent transparent transparent #112e21;
+            }
+        }
+    }
+
+    &:nth-child(5) {
+        &:before,
+        &:after {
+            background-color: #183025;
+        }
+
+        .ciclo-item__titulo {
+            background-color: #183025;
+
+            &::before {
+                border-color: transparent transparent #01110a transparent;
+            }
+
+            &::after {
+                border-color: transparent transparent transparent #01110a;
+            }
+        }
+    }
+
+    &__titulo {
+        background-color: $primary;
+        display: flex;
+        height: 120%;
+        text-align: center;
+        border-radius: 0 0 20px 20px;
+        top: -15px;
+        position: relative;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+
+        &::before,
+        &::after {
+            content: '';
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            transform: rotate(0deg);
+            position: absolute;
+            top: 0;
+        }
+
+        &::before {
+            border-width: 0 0 15px 15px;
+            border-color: transparent transparent #ff4532 transparent;
+            left: -15px;
+        }
+
+        &::after {
+            border-width: 15px 0 0 15px;
+            border-color: transparent transparent transparent #ff4532;
+            right: -15px;
+        }
+
+        h4 {
+            font-size: 20px;
+            color: $blanco;
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+}
+
+.section-ciclos {
+    > .container {
+        margin: 0 auto;
+
+        @include mq_up($xl) {
+            max-width: 70%;
+        }
+    }
+}
+
+.traslado {
+    background-color: #e0ffe8;
+    border-radius: 8px 0 0 8px;
+}
