@@ -228,6 +228,7 @@
             color: $blanco;
             font-weight: bold;
             margin: 0;
+            text-transform: uppercase;
         }
     }
 }
@@ -245,4 +246,29 @@
 .traslado {
     background-color: #e0ffe8;
     border-radius: 8px 0 0 8px;
+}
+
+.tabla-ciclos {
+    margin-bottom: 0;
+    background-color: transparent;
+    background: transparent;
+
+    thead {
+        display: none;
+
+        @include mq_down($md) {
+            display: table-row-group;
+        }
+    }
+
+    tr {
+        td,
+        th {
+            background-color: transparent !important;
+            border-bottom: 0;
+        }
+        td:first-child {
+            width: 65%;
+        }
+    }
 }

@@ -16018,6 +16018,7 @@ img.bola-metodologias-aprobadas {
   color: #fff;
   font-weight: bold;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .section-ciclos > .container {
@@ -16032,6 +16033,28 @@ img.bola-metodologias-aprobadas {
 .traslado {
   background-color: #e0ffe8;
   border-radius: 8px 0 0 8px;
+}
+
+.tabla-ciclos {
+  margin-bottom: 0;
+  background-color: transparent;
+  background: transparent;
+}
+.tabla-ciclos thead {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .tabla-ciclos thead {
+    display: table-row-group;
+  }
+}
+.tabla-ciclos tr td,
+.tabla-ciclos tr th {
+  background-color: transparent !important;
+  border-bottom: 0;
+}
+.tabla-ciclos tr td:first-child {
+  width: 65%;
 }
 
 /* Layouts */
