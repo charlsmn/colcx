@@ -16063,6 +16063,11 @@ span.continua-proceso {
 .tabla-ciclos tr td {
   border-left: 1px solid #3e7a5f;
 }
+@media only screen and (max-width: 768px) {
+  .tabla-ciclos tr td {
+    border-left: 0;
+  }
+}
 
 .linea-fees svg {
   width: 23%;

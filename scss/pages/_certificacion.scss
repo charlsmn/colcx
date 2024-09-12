@@ -276,6 +276,10 @@ span.continua-proceso {
 
         td {
             border-left: 1px solid $primary;
+
+            @include mq_down($md) {
+                border-left: 0;
+            }
         }
     }
 }
