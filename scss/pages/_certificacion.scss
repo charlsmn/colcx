@@ -27,7 +27,7 @@
     border-radius: 20px;
     font-size: 12px;
     margin-bottom: 60px;
-    box-shadow: 0 10px 20px -20px;
+    box-shadow: 0 54px 16px -60px;
     min-height: 40px;
     cursor: pointer;
     position: relative;
@@ -68,10 +68,10 @@
         }
     }
 
-    .col-md-9 {
-        padding: 10px 0;
+    > .col-md-9 {
         display: none;
         overflow: hidden;
+        padding: 10px 0;
 
         @include mq_down($md) {
             padding: 20px;
@@ -82,10 +82,6 @@
         margin: 0;
         padding: 0;
         list-style-type: none;
-    }
-
-    .row {
-        padding: 10px 0;
     }
 
     p {
@@ -243,6 +239,13 @@
     }
 }
 
+span.continua-proceso {
+    display: block;
+    color: $primary;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .traslado {
     background-color: #e0ffe8;
     border-radius: 8px 0 0 8px;
@@ -270,5 +273,21 @@
         td:first-child {
             width: 65%;
         }
+
+        td {
+            border-left: 1px solid $primary;
+        }
+    }
+}
+
+.linea-fees {
+    svg {
+        width: 23%;
+    }
+}
+
+.sec-principios {
+    .row > div {
+        margin-bottom: 25px;
     }
 }

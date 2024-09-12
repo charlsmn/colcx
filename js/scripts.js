@@ -269,8 +269,11 @@ popupConsultasActivas()
 
 function ciclos() {
     const ciclos = document.querySelectorAll('.ciclo-item')
+    const continuaProceso = document.querySelector('.continua-proceso')
 
     ciclos.forEach((ciclo) => {
+        ciclos[0].classList.add('active')
+
         ciclo.addEventListener('click', () => {
             ciclos.forEach((item) => item.classList.remove('active'))
 
@@ -278,6 +281,18 @@ function ciclos() {
             ciclo.classList.add('active')
         })
     })
+
+    if (continuaProceso) {
+        continuaProceso.addEventListener('click', () => {
+            // Forzar redibujado
+            setTimeout(() => {
+                ciclos.forEach((item) => item.classList.remove('active'))
+                if (ciclos[2]) {
+                    ciclos[2].classList.add('active')
+                }
+            }, 50) // Pequeño retraso para forzar la actualización del DOM
+        })
+    }
 }
 
 ciclos()

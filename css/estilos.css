@@ -15855,8 +15855,8 @@ img.bola-metodologias-aprobadas {
   border-radius: 20px;
   font-size: 12px;
   margin-bottom: 60px;
-  -webkit-box-shadow: 0 10px 20px -20px;
-          box-shadow: 0 10px 20px -20px;
+  -webkit-box-shadow: 0 54px 16px -60px;
+          box-shadow: 0 54px 16px -60px;
   min-height: 40px;
   cursor: pointer;
   position: relative;
@@ -15892,13 +15892,13 @@ img.bola-metodologias-aprobadas {
 .ciclo-item.active:before, .ciclo-item.active:after {
   display: none;
 }
-.ciclo-item .col-md-9 {
-  padding: 10px 0;
+.ciclo-item > .col-md-9 {
   display: none;
   overflow: hidden;
+  padding: 10px 0;
 }
 @media only screen and (max-width: 768px) {
-  .ciclo-item .col-md-9 {
+  .ciclo-item > .col-md-9 {
     padding: 20px;
   }
 }
@@ -15906,9 +15906,6 @@ img.bola-metodologias-aprobadas {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-.ciclo-item .row {
-  padding: 10px 0;
 }
 .ciclo-item p {
   margin: 0;
@@ -16030,6 +16027,13 @@ img.bola-metodologias-aprobadas {
   }
 }
 
+span.continua-proceso {
+  display: block;
+  color: #3e7a5f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .traslado {
   background-color: #e0ffe8;
   border-radius: 8px 0 0 8px;
@@ -16055,6 +16059,17 @@ img.bola-metodologias-aprobadas {
 }
 .tabla-ciclos tr td:first-child {
   width: 65%;
+}
+.tabla-ciclos tr td {
+  border-left: 1px solid #3e7a5f;
+}
+
+.linea-fees svg {
+  width: 23%;
+}
+
+.sec-principios .row > div {
+  margin-bottom: 25px;
 }
 
 /* Layouts */
