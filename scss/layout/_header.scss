@@ -136,9 +136,13 @@
     padding: 0;
     background-color: $primary;
     gap: 12px;
-    padding: 7px 12px;
+    flex-direction: row-reverse;
     border-radius: 10px 10px 0 0;
     padding-bottom: 0;
+
+    &.lang-en {
+        flex-direction: row;
+    }
 
     a {
         color: $blanco;
@@ -181,6 +185,15 @@
     background-color: $primary;
     @include mq_up($xl) {
         display: none;
+    }
+
+    .whatsapp {
+        &::before {
+            display: none;
+        }
+        img {
+            width: 40px;
+        }
     }
 
     .logo-menu-container {

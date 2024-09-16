@@ -16297,9 +16297,18 @@ span.continua-proceso {
   padding: 0;
   background-color: #3e7a5f;
   gap: 12px;
-  padding: 7px 12px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   border-radius: 10px 10px 0 0;
   padding-bottom: 0;
+}
+.lang.lang-en {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .lang a {
   color: #fff;
@@ -16339,6 +16348,12 @@ span.continua-proceso {
   .header-movil {
     display: none;
   }
+}
+.header-movil .whatsapp::before {
+  display: none;
+}
+.header-movil .whatsapp img {
+  width: 40px;
 }
 .header-movil .logo-menu-container {
   -webkit-box-pack: start;
