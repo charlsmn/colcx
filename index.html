@@ -167,7 +167,11 @@
                     >
                         <ul class="lang">
                             <li>
-                                <a href="#whatsapp" class="whatsapp">
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=573102022341"
+                                    class="whatsapp"
+                                    target="_blank"
+                                >
                                     <img
                                         src="./images/whatsapp-icon.svg"
                                         alt="Whatsapp"
@@ -351,6 +355,19 @@
                     data-bs-slide-to="1"
                     aria-label="Slide 2"
                 ></button>
+
+                <button
+                    type="button"
+                    data-bs-target="#carouselHero"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselHero"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                ></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -397,36 +414,139 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item slider-metodologias">
                     <img
-                        src="./images/bannerHome.jpg"
+                        src="./images/fondo-metodologias.jpg"
                         class="d-block w-100"
                         alt="..."
                     />
                     <div
                         class="carousel-caption container d-md-flex flex justify-content-between"
                     >
-                        <div class="row w-100">
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <img
-                                    src="./images/novedades-slider.svg"
-                                    alt=""
-                                    class="slider-novedades__img"
-                                />
-                                <h2 class="slider-novedades__title">
-                                    Novedades <strong>COLCX</strong>
+                        <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <h2 class="slider-metodologias__title">
+                                    Nuestras metodologías
                                 </h2>
+                                <div class="row gx-4 gy-2">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="slider-metodologias__box">
+                                            <h3>AFOLU</h3>
+                                            <p>
+                                                Criterios y procedimientos
+                                                innovadores para mitigar el
+                                                cambio climático con integridad,
+                                                transparencia e inclusión,
+                                                fortaleciendo los sectores
+                                                forestales, agroforestales y
+                                                cultivos leñosos.
+                                            </p>
+                                            <span class="published"
+                                                >Publicada el 10 de agosto de
+                                                2023 versión 2.0</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="slider-metodologias__box">
+                                            <h3>REDD+</h3>
+                                            <p>
+                                                Principios y lineamientos para
+                                                reducir emisiones por
+                                                deforestación y degradación
+                                                forestal, promoviendo la
+                                                conservación de bosques, la
+                                                protección de la cultura y el
+                                                respeto de las comunidades
+                                                rurales.
+                                            </p>
+                                            <span class="published"
+                                                >Publicada el 10 de agosto de
+                                                2023 versión 1.0</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12 col-md-12 col-lg-4"></div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <p class="slider-novedades__text">
-                                    Conoce las novedades de los últimos
-                                    comunicados de Colcx para este 2024
+
+                            <div class="col-12 col-md-5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item slider-estandar">
+                    <img
+                        src="./images/fondo-estandar.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                    <div
+                        class="carousel-caption container d-md-flex flex justify-content-between"
+                    >
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <h2 class="slider-estandar__title">
+                                    Descubre el <strong>Estándar COLCX</strong>
+                                </h2>
+                                <p class="slider-estandar__text">
+                                    Impulsa el cambio con nosotros. Nuestros
+                                    principios dinamizan los
+                                    <strong>mercados ambientales</strong> y
+                                    promueven un desarrollo bajo en carbono.
+                                    Contribuimos activamente al logro de los
+                                    Objetivos de
+                                    <strong>Desarrollo Sostenible (ODS)</strong>
+                                    y promovemos las salvaguardas
+                                    socioambientales. 
                                 </p>
-                                <a href="#" class="btn btn-primary fst-italic"
+                                <span class="slider-estandar__date"
+                                    >Publicada el 13 de julio de 2023 en versión
+                                    1.0</span
+                                >
+                            </div>
+
+                            <div class="col-12 col-md-5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item slider-sistema">
+                    <img
+                        src="./images/fondo-sistema.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                    <div
+                        class="carousel-caption container d-md-flex flex justify-content-between"
+                    >
+                        <div class="row">
+                            <div class="col-12 col-md-6"></div>
+                            <div class="col-12 col-lg-6">
+                                <h2 class="slider-sistema__title">
+                                    Sistema de registro
+                                    <img src="./images/xm.svg" alt="xm" />
+                                    <img
+                                        src="./images/sistema-icon.png"
+                                        alt=""
+                                        class="slider-sistema__title-icon"
+                                    />
+                                </h2>
+                                <p class="slider-sistema__text">
+                                    <strong>COLCX</strong> lanza su nuevo
+                                    sistema de registro en
+                                    <strong>alianza con XM</strong>, diseñado
+                                    para impulsar la
+                                    <strong
+                                        >transparencia, seguridad y
+                                        eficiencia</strong
+                                    >
+                                    en el mercado global de carbono, utilizando
+                                    <strong>tecnología blockchain</strong> en un
+                                    ambiente <strong>digital integral.</strong>
+                                </p>
+                                <a
+                                    href="#"
+                                    class="btn btn-primary btn-green fst-italic"
                                     >Conoce más
                                     <svg
-                                        xmlns="http://www.w3.org/2000/svg"
                                         width="24"
                                         height="24"
                                         viewBox="0 0 48 48"

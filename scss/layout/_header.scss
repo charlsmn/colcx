@@ -140,6 +140,10 @@
     border-radius: 10px 10px 0 0;
     padding-bottom: 0;
 
+    @include mq_up($lg) {
+        padding: 10px;
+    }
+
     &.lang-en {
         flex-direction: row;
     }

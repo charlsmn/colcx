@@ -164,7 +164,11 @@
                                 <a href="../index.html">ESP</a>
                             </li>
                             <li>
-                                <a href="#whatsapp" class="whatsapp">
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=573102022341"
+                                    class="whatsapp"
+                                    target="_blank"
+                                >
                                     <img
                                         src="../images/whatsapp-icon.svg"
                                         alt="Whatsapp"
@@ -341,6 +345,18 @@
                     data-bs-slide-to="1"
                     aria-label="Slide 2"
                 ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselHero"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselHero"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                ></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -387,36 +403,156 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item slider-metodologias">
                     <img
-                        src="../images/bannerHome.jpg"
+                        src="../images/fondo-metodologias.jpg"
                         class="d-block w-100"
                         alt="..."
                     />
                     <div
                         class="carousel-caption container d-md-flex flex justify-content-between"
                     >
-                        <div class="row w-100">
-                            <div class="col-12 col-md-12 col-lg-4">
-                                <img
-                                    src="../images/novedades-slider.svg"
-                                    alt=""
-                                    class="slider-novedades__img"
-                                />
-                                <h2 class="slider-novedades__title">
-                                    News <strong>COLCX</strong>
+                        <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <h2 class="slider-metodologias__title">
+                                    Our methodologies
                                 </h2>
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-4"></div>
-                            <div class="col-12 col-md-12 col-lg-4">
-                                <p class="slider-novedades__text">
-                                    Find out what's new in the latest Colcx
-                                    releases for 2024
-                                </p>
-                                <a href="#" class="btn btn-primary fst-italic"
-                                    >Learn More
+                                <div class="row gx-4 gy-2">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="slider-metodologias__box">
+                                            <h3>AFOLU</h3>
+                                            <p>
+                                                Innovative criteria and
+                                                procedures to mitigate climate
+                                                change with integrity,
+                                                transparency and inclusion,
+                                                strengthening the forestry,
+                                                agroforestry and woody crops
+                                                sectors.
+                                            </p>
+                                            <span class="published"
+                                                >Published on August 10, 2023
+                                                version 2.0</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="slider-metodologias__box">
+                                            <h3>REDD+</h3>
+                                            <p>
+                                                Principles and guidelines to
+                                                reduce emissions from
+                                                deforestation and forest
+                                                degradation, promoting forest
+                                                conservation, protection of
+                                                culture and respect for rural
+                                                communities.
+                                            </p>
+                                            <span class="published"
+                                                >Published on August 10, 2023
+                                                version 1.0</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <a
+                                    href="#"
+                                    class="btn btn-primary btn-green fst-italic"
+                                    >Learn more
                                     <svg
-                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 48 48"
+                                    >
+                                        <path
+                                            fill="white"
+                                            d="M24 4c11.046 0 20 8.954 20 20s-8.954 20-20 20S4 35.046 4 24S12.954 4 24 4m-3.634 28.616a1.25 1.25 0 0 0 1.768 1.768l9.5-9.5a1.25 1.25 0 0 0 0-1.768l-9.5-9.5a1.25 1.25 0 0 0-1.768 1.768L28.982 24z"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-md-5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item slider-estandar">
+                    <img
+                        src="../images/fondo-estandar.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                    <div
+                        class="carousel-caption container d-md-flex flex justify-content-between"
+                    >
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <h2 class="slider-estandar__title">
+                                    Discover the <strong>COLCX Standard</strong>
+                                </h2>
+                                <p class="slider-estandar__text">
+                                    Drive change with us. Our principles
+                                    energize environmental
+                                    <strong>markets</strong> and
+                                    <strong>promote low</strong>-carbon
+                                    development. We actively contribute to the
+                                    achievement of the
+                                    <strong
+                                        >Sustainable Development Goals</strong
+                                    >
+                                    (SDGs) and promote socio-environmental
+                                    safeguards.
+                                </p>
+                                <span class="slider-estandar__date"
+                                    >Published on July 13, 2023 in version
+                                    1.0</span
+                                >
+                            </div>
+
+                            <div class="col-12 col-md-5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item slider-sistema">
+                    <img
+                        src="../images/fondo-sistema.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                    <div
+                        class="carousel-caption container d-md-flex flex justify-content-between"
+                    >
+                        <div class="row">
+                            <div class="col-12 col-md-6"></div>
+                            <div class="col-12 col-lg-6">
+                                <h2 class="slider-sistema__title">
+                                    Registration system
+                                    <img src="../images/xm.svg" alt="xm" />
+                                    <img
+                                        src="../images/sistema-icon.png"
+                                        alt=""
+                                        class="slider-sistema__title-icon"
+                                    />
+                                </h2>
+                                <p class="slider-sistema__text">
+                                    <strong>COLCX</strong> launches its new
+                                    registry system in
+                                    <strong>partnership with XM</strong>,
+                                    designed to drive
+                                    <strong
+                                        >transparency, security and
+                                        efficiency</strong
+                                    >
+                                    in the global carbon market, using
+                                    <strong>blockchain technology</strong> in an
+                                    end-to-end
+                                    <strong>digital environment.</strong>
+                                </p>
+                                <a
+                                    href="#"
+                                    class="btn btn-primary btn-green fst-italic"
+                                    >Learn more
+                                    <svg
                                         width="24"
                                         height="24"
                                         viewBox="0 0 48 48"
