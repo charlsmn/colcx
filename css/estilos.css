@@ -13435,7 +13435,7 @@ textarea.form-control-lg {
 }
 @media only screen and (max-width: 1024px) {
   .carouselHero .carousel-item > img {
-    height: 500px;
+    height: 600px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -13463,6 +13463,12 @@ textarea.form-control-lg {
   width: 45px;
   height: 45px;
   background-size: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .carouselHero .slider-sistema > img {
+    -o-object-position: 20% !important;
+       object-position: 20% !important;
+  }
 }
 .carouselHero .slider-sistema__title {
   color: #fff;
@@ -16374,6 +16380,16 @@ span.continua-proceso {
   gap: 20px;
   margin: 0;
   padding: 0;
+}
+
+.whatsapp-desktop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99999;
+}
+.whatsapp-desktop img {
+  width: 70px;
 }
 
 .site-header {

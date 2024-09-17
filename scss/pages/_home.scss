@@ -13,7 +13,7 @@
     .carousel-item {
         > img {
             @include mq_down($tablet) {
-                height: 500px;
+                height: 600px;
                 object-fit: cover;
             }
         }
@@ -44,6 +44,12 @@
     }
 
     .slider-sistema {
+        > img {
+            @include mq_down($md) {
+                object-position: 20% !important;
+            }
+        }
+
         &__title {
             color: $blanco;
             font-size: 30px;
