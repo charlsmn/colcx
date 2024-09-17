@@ -16388,6 +16388,11 @@ span.continua-proceso {
   right: 30px;
   z-index: 99999;
 }
+@media only screen and (max-width: 1280px) {
+  .whatsapp-desktop {
+    display: none;
+  }
+}
 .whatsapp-desktop img {
   width: 70px;
 }
