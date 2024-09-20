@@ -13466,8 +13466,8 @@ textarea.form-control-lg {
 }
 @media only screen and (max-width: 768px) {
   .carouselHero .slider-sistema > img {
-    -o-object-position: 20% !important;
-       object-position: 20% !important;
+    -o-object-position: right !important;
+       object-position: right !important;
   }
 }
 .carouselHero .slider-sistema__title {
@@ -13600,17 +13600,7 @@ textarea.form-control-lg {
 .carouselHero .slider-estandar__date {
   font-size: 12px;
   color: #0d4f04;
-  position: absolute;
-  left: 0;
-  width: 20%;
-  text-align: left;
-}
-@media only screen and (max-width: 992px) {
-  .carouselHero .slider-estandar__date {
-    position: relative;
-    width: 100%;
-    text-align: center;
-  }
+  text-align: center;
 }
 .carouselHero .slider-estandar .carousel-caption {
   top: 28%;

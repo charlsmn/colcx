@@ -46,7 +46,7 @@
     .slider-sistema {
         > img {
             @include mq_down($md) {
-                object-position: 20% !important;
+                object-position: right !important;
             }
         }
 
@@ -178,16 +178,7 @@
         &__date {
             font-size: 12px;
             color: #0d4f04;
-            position: absolute;
-            left: 0;
-            width: 20%;
-            text-align: left;
-
-            @include mq_down($lg) {
-                position: relative;
-                width: 100%;
-                text-align: center;
-            }
+            text-align: center;
         }
 
         .carousel-caption {
