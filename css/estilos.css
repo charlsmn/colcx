@@ -16083,6 +16083,15 @@ img.bola-metodologias-aprobadas {
   font-weight: 600;
   color: #000;
 }
+@media only screen and (max-width: 768px) {
+  .ciclo-item__subtitulo {
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+  }
+}
+.ciclo-item .col-md-9 {
+  position: relative;
+}
 .ciclo-item.active {
   cursor: auto;
 }
@@ -16174,7 +16183,7 @@ img.bola-metodologias-aprobadas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 120%;
+  height: calc(100% + 15px);
   text-align: center;
   border-radius: 0 0 20px 20px;
   top: -15px;
@@ -16243,6 +16252,11 @@ span.continua-proceso {
   background-color: transparent;
   background: transparent;
 }
+@media only screen and (max-width: 768px) {
+  .tabla-ciclos {
+    margin-left: 10px;
+  }
+}
 .tabla-ciclos thead {
   display: none;
 }
@@ -16290,12 +16304,41 @@ span.continua-proceso {
   .linea-translado {
     width: 20px;
     right: 10px;
+    height: 33%;
   }
 }
 .linea-translado svg {
   position: absolute;
   bottom: -4px;
   right: 30px;
+}
+
+.estados-titulo-movil {
+  position: absolute;
+  left: -15px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  color: #000;
+  top: 24px;
+  font-size: 13px;
+}
+@media only screen and (min-width: 768px) {
+  .estados-titulo-movil {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .titulo-etapa-movil {
+    display: none;
+  }
 }
 
 /* Layouts */

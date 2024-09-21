@@ -42,6 +42,15 @@
         font-size: 17px;
         font-weight: 600;
         color: #000;
+
+        @include mq_down($md) {
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
+        }
+    }
+
+    .col-md-9 {
+        position: relative;
     }
 
     &.active {
@@ -173,7 +182,7 @@
     &__titulo {
         background-color: $primary;
         display: flex;
-        height: 120%;
+        height: calc(100% + 15px);
         text-align: center;
         border-radius: 0 0 20px 20px;
         top: -15px;
@@ -243,6 +252,10 @@ span.continua-proceso {
     background-color: transparent;
     background: transparent;
 
+    @include mq_down($md) {
+        margin-left: 10px;
+    }
+
     thead {
         display: none;
 
@@ -296,11 +309,35 @@ span.continua-proceso {
     @include mq_down($md) {
         width: 20px;
         right: 10px;
+        height: 33%;
     }
 
     svg {
         position: absolute;
         bottom: -4px;
         right: 30px;
+    }
+}
+
+.estados-titulo-movil {
+    position: absolute;
+    left: -15px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    color: #000;
+    top: 24px;
+    font-size: 13px;
+
+    @include mq_up($md) {
+        display: none;
+    }
+}
+
+.titulo-etapa-movil {
+    @include mq_up($md) {
+        display: none;
     }
 }
