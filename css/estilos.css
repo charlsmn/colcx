@@ -16341,6 +16341,122 @@ span.continua-proceso {
   }
 }
 
+.chart-container {
+  border: 1px solid #3e7a5f;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  min-height: 404px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.chart-container h4, .chart-container .h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.chart-circulo-wrapper {
+  margin: 0 auto;
+}
+
+.mapa-container {
+  text-align: center;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.mapa-container .region-marker {
+  position: absolute;
+  cursor: pointer;
+}
+.mapa-container .region-marker.region-caribe {
+  top: 10%;
+  left: 30%;
+}
+.mapa-container .region-marker.region-pacifico {
+  top: 30%;
+  left: 10%;
+}
+.mapa-container .region-marker.region-andina {
+  top: 40%;
+  left: 30%;
+}
+.mapa-container .region-marker.region-amazonia {
+  top: 70%;
+  left: 50%;
+}
+.mapa-container .region-marker.region-orinoquia {
+  top: 35%;
+  left: 65%;
+}
+
+.popup-regiones {
+  position: absolute;
+  top: 50%;
+  background-color: #3e7a5f;
+  padding: 30px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 15px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.popup-regiones.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+  pointer-events: all;
+}
+.popup-regiones img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.popup-regiones h4, .popup-regiones .h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+.popup-regiones p {
+  text-align: left;
+  margin: 0;
+}
+
+.filtro-estadistica {
+  margin-bottom: 20px;
+}
+.filtro-estadistica input,
+.filtro-estadistica select {
+  height: 41px;
+  color: #3e7a5f;
+  border-radius: 4px;
+  border: 0;
+  min-width: 160px;
+  padding: 10px;
+  font-weight: bold;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 /* Layouts */
 .site-footer {
   background: rgb(62, 122, 95);

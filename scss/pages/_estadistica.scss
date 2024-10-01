@@ -1,0 +1,113 @@
+.chart-container {
+    border: 1px solid #3e7a5f;
+    background-color: $white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    min-height: 404px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+.chart-circulo-wrapper {
+    margin: 0 auto;
+}
+
+.mapa-container {
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+
+    .region-marker {
+        position: absolute;
+        cursor: pointer;
+
+        &.region-caribe {
+            top: 10%;
+            left: 30%;
+        }
+
+        &.region-pacifico {
+            top: 30%;
+            left: 10%;
+        }
+
+        &.region-andina {
+            top: 40%;
+            left: 30%;
+        }
+
+        &.region-amazonia {
+            top: 70%;
+            left: 50%;
+        }
+
+        &.region-orinoquia {
+            top: 35%;
+            left: 65%;
+        }
+    }
+}
+
+.popup-regiones {
+    position: absolute;
+    top: 50%;
+    background-color: #3e7a5f;
+    padding: 30px;
+    transform: translateY(-50%);
+    border-radius: 15px;
+    color: $white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+        pointer-events: all;
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: $white;
+        font-weight: bold;
+    }
+
+    p {
+        text-align: left;
+        margin: 0;
+    }
+}
+
+.filtro-estadistica {
+    margin-bottom: 20px;
+
+    input,
+    select {
+        height: 41px;
+        color: #3e7a5f;
+        border-radius: 4px;
+        border: 0;
+        min-width: 160px;
+        padding: 10px;
+        font-weight: bold;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}

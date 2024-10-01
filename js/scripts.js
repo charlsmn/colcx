@@ -296,3 +296,25 @@ function ciclos() {
 }
 
 ciclos()
+
+function popupRegiones() {
+    const popupRegiones = document.querySelector('.popup-regiones')
+    const closePopup = document.querySelector('.close-popup')
+    const regiones = document.querySelectorAll('.region-marker')
+    const regionName = document.querySelector('.popup-regiones__name')
+
+    regiones.forEach((region) => {
+        region.addEventListener('click', () => {
+            const regionAlt = region.getAttribute('alt')
+            regionName.textContent = regionAlt
+
+            popupRegiones.classList.add('active')
+        })
+    })
+
+    closePopup.addEventListener('click', () => {
+        popupRegiones.classList.remove('active')
+    })
+}
+
+popupRegiones()
