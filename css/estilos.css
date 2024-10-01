@@ -16361,6 +16361,11 @@ span.continua-proceso {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media only screen and (max-width: 768px) {
+  .chart-container {
+    min-height: auto;
+  }
+}
 .chart-container h4, .chart-container .h4 {
   font-size: 18px;
   margin-bottom: 20px;
@@ -16368,6 +16373,11 @@ span.continua-proceso {
 
 .chart-circulo-wrapper {
   margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .chart-circulo-wrapper {
+    width: 100%;
+  }
 }
 
 .mapa-container {
