@@ -303,18 +303,22 @@ function popupRegiones() {
     const regiones = document.querySelectorAll('.region-marker')
     const regionName = document.querySelector('.popup-regiones__name')
 
-    regiones.forEach((region) => {
-        region.addEventListener('click', () => {
-            const regionAlt = region.getAttribute('alt')
-            regionName.textContent = regionAlt
+    if (regiones.length > 0) {
+        regiones.forEach((region) => {
+            region.addEventListener('click', () => {
+                const regionAlt = region.getAttribute('alt')
+                regionName.textContent = regionAlt
 
-            popupRegiones.classList.add('active')
+                popupRegiones.classList.add('active')
+            })
         })
-    })
+    }
 
-    closePopup.addEventListener('click', () => {
-        popupRegiones.classList.remove('active')
-    })
+    if (closePopup) {
+        closePopup.addEventListener('click', () => {
+            popupRegiones.classList.remove('active')
+        })
+    }
 }
 
 popupRegiones()
