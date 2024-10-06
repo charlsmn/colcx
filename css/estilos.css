@@ -16469,6 +16469,23 @@ span.continua-proceso {
 .filtro-estadistica {
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .filtro-estadistica {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .filtro-estadistica input,
 .filtro-estadistica select {
   height: 41px;

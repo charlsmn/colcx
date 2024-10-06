@@ -122,6 +122,14 @@
 .filtro-estadistica {
     margin-bottom: 20px;
 
+    @include mq_down($md) {
+        display: flex;
+        gap: 10px;
+        flex-flow: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     input,
     select {
         height: 41px;
