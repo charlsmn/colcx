@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: scroll;
 
     @include mq_down($md) {
         min-height: auto;
@@ -21,9 +22,20 @@
 }
 
 .chart-circulo-wrapper {
-    margin: 0 auto;
-
     @include mq_down($md) {
+        width: 100%;
+    }
+}
+
+.responsive-chart {
+    width: 100%;
+    height: 100%;
+
+    @include mq_down($tablet) {
+        width: 500px;
+    }
+
+    canvas {
         width: 100%;
     }
 }

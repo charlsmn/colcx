@@ -16360,6 +16360,7 @@ span.continua-proceso {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow-x: scroll;
 }
 @media only screen and (max-width: 768px) {
   .chart-container {
@@ -16371,13 +16372,23 @@ span.continua-proceso {
   margin-bottom: 20px;
 }
 
-.chart-circulo-wrapper {
-  margin: 0 auto;
-}
 @media only screen and (max-width: 768px) {
   .chart-circulo-wrapper {
     width: 100%;
   }
+}
+
+.responsive-chart {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .responsive-chart {
+    width: 500px;
+  }
+}
+.responsive-chart canvas {
+  width: 100%;
 }
 
 .mapa-container {

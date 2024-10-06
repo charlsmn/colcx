@@ -482,7 +482,9 @@
                                         vintage</strong
                                     >
                                 </h4>
-                                <canvas id="vintage"></canvas>
+                                <div class="responsive-chart">
+                                    <canvas id="vintage"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -518,7 +520,9 @@
                                 <h4>
                                     <strong>Proyectos por etapa</strong>
                                 </h4>
-                                <canvas id="etapa"></canvas>
+                                <div class="responsive-chart">
+                                    <canvas id="etapa"></canvas>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -571,7 +575,9 @@
                                         programa</strong
                                     >
                                 </h4>
-                                <canvas id="registrados"></canvas>
+                                <div class="responsive-chart">
+                                    <canvas id="registrados"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -752,11 +758,12 @@
                             backgroundColor: '#04897B',
                             borderRadius: 3,
                             barThickness: 13,
+                            hoverBackgroundColor: '#014D41',
                         },
                     ],
                 },
                 options: {
-                    responsive: true,
+                    responsive: false,
                     scales: {
                         y: {
                             beginAtZero: true,
@@ -802,17 +809,35 @@
                     labels: ['REDD+', 'AR', 'Generación energética'],
                     datasets: [
                         {
-                            data: [40, 30, 30],
-                            backgroundColor: ['#3e7a5f', '#04897b', '#648855'],
+                            data: [30, 40, 30],
+                            backgroundColor: ['#5C9B36', '#0D4F04', '#9EE8C7'],
                             borderWidth: 0,
                         },
                     ],
                 },
                 options: {
-                    responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
                             position: 'bottom',
+                            labels: {
+                                usePointStyle: false, // Esto hará que los íconos sean círculos
+                                pointStyleWidth: 15, // Ancho del punto
+                                generateLabels: function (chart) {
+                                    const original =
+                                        Chart.overrides.doughnut.plugins.legend
+                                            .labels.generateLabels
+                                    const labels = original.call(this, chart)
+
+                                    // Personalizar cada label para agregar borde redondeado
+                                    labels.forEach((label) => {
+                                        label.borderRadius = 5 // Bordes redondeados
+                                        label.padding = 20 // Agregar espacio entre el texto y el ícono
+                                    })
+
+                                    return labels
+                                },
+                            },
                         },
                         datalabels: {
                             formatter: (value, ctx) => {
@@ -847,21 +872,40 @@
                     ],
                     datasets: [
                         {
-                            data: [29, 4, 13, 11],
+                            data: [13, 11, 29, 4],
                             backgroundColor: [
                                 '#52B83D',
-                                '#04897B',
-                                '#5AB978',
                                 '#4DBB81',
+                                '#52B83D',
+                                '#04897B',
                             ],
                         },
                     ],
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
                             position: 'bottom',
+                            labels: {
+                                usePointStyle: false, // Esto hará que los íconos sean círculos
+                                pointStyleWidth: 15, // Ancho del punto
+                                generateLabels: function (chart) {
+                                    const original =
+                                        Chart.overrides.doughnut.plugins.legend
+                                            .labels.generateLabels
+                                    const labels = original.call(this, chart)
+
+                                    // Personalizar cada label para agregar borde redondeado
+                                    labels.forEach((label) => {
+                                        label.borderRadius = 5 // Bordes redondeados
+                                        label.padding = 20 // Agregar espacio entre el texto y el ícono
+                                    })
+
+                                    return labels
+                                },
+                            },
                         },
                         datalabels: {
                             color: 'black',
@@ -903,7 +947,7 @@
                     ],
                 },
                 options: {
-                    responsive: true,
+                    responsive: false,
                     scales: {
                         y: {
                             display: false,
@@ -957,19 +1001,23 @@
                             label: 'Certificados',
                             data: [0, 10, 5, 20, 25, 15, 20],
                             borderColor: '#5AB978',
+                            backgroundColor: '#5AB978',
                         },
                         {
                             label: 'Retirados',
                             data: [15, 20, 15, 30, 30, 25, 30],
                             borderColor: '#04897B',
+                            backgroundColor: '#04897B',
                         },
                     ],
                 },
                 options: {
-                    responsive: true,
+                    responsive: false,
                     scales: {
                         y: {
                             beginAtZero: true,
+                            max: 35, // Valor máximo fijo
+                            min: 0, // Valor mínimo fijo
                             title: {
                                 display: true,
                                 text: 'Millones de COLCERs',
@@ -978,9 +1026,10 @@
                                     size: 14,
                                     family: '"DM Sans", sans-serif',
                                 },
+                                padding: { left: 80 },
                             },
                             ticks: {
-                                stepSize: 1,
+                                stepSize: 5,
                             },
                         },
                         x: {
@@ -998,9 +1047,33 @@
                             },
                         },
                     },
+                    layout: {
+                        padding: {
+                            top: 50, // Añadir margen a la izquierda para el texto del eje Y
+                        },
+                    },
                     plugins: {
                         legend: {
                             position: 'bottom',
+                            labels: {
+                                generateLabels: function (chart) {
+                                    const data = chart.data
+                                    return data.datasets.map((dataset, i) => {
+                                        return {
+                                            text: dataset.label,
+                                            fillStyle: dataset.backgroundColor,
+                                            strokeStyle: dataset.borderColor,
+                                            lineWidth: 0,
+                                            borderRadius: 4,
+                                            datasetIndex: i,
+                                        }
+                                    })
+                                },
+                                usePointStyle: false,
+                                boxWidth: 35,
+                                boxHeight: 10,
+                                padding: 20,
+                            },
                         },
                     },
                 },
