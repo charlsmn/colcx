@@ -16360,7 +16360,11 @@ span.continua-proceso {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow-x: scroll;
+}
+@media only screen and (max-width: 1280px) {
+  .chart-container {
+    overflow-x: scroll;
+  }
 }
 @media only screen and (max-width: 768px) {
   .chart-container {
