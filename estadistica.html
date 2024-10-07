@@ -460,13 +460,15 @@
                                             Proyectos certificados:
                                             <span
                                                 class="popup-regiones__certificados"
-                                            ></span>
+                                                >15</span
+                                            >
                                         </p>
                                         <p>
                                             Proyectos en proceso de registro:
                                             <span
                                                 class="popup-regiones__proceso"
-                                            ></span>
+                                                >10</span
+                                            >
                                         </p>
                                     </div>
                                 </div>
@@ -747,6 +749,9 @@
             const labels = vintageData.map((item) => item[0])
             const dataValues = vintageData.map((item) => item[1])
 
+            let windowWith = window.innerWidth
+            let legendAlign = windowWith > 768 ? 'center' : 'start'
+
             new Chart(vintage, {
                 type: 'bar',
                 data: {
@@ -820,9 +825,11 @@
                     plugins: {
                         legend: {
                             position: 'bottom',
+                            align: legendAlign,
                             labels: {
                                 usePointStyle: false, // Esto hará que los íconos sean círculos
                                 pointStyleWidth: 15, // Ancho del punto
+                                padding: 25,
                                 generateLabels: function (chart) {
                                     const original =
                                         Chart.overrides.doughnut.plugins.legend
@@ -888,9 +895,11 @@
                     plugins: {
                         legend: {
                             position: 'bottom',
+                            align: legendAlign,
                             labels: {
                                 usePointStyle: false, // Esto hará que los íconos sean círculos
                                 pointStyleWidth: 15, // Ancho del punto
+                                padding: 25,
                                 generateLabels: function (chart) {
                                     const original =
                                         Chart.overrides.doughnut.plugins.legend
