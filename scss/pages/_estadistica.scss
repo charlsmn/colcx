@@ -35,7 +35,7 @@
     height: 100%;
 
     @include mq_down($tablet) {
-        width: 500px;
+        width: 550px;
     }
 
     canvas {

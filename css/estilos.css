@@ -16394,7 +16394,7 @@ span.continua-proceso {
 }
 @media only screen and (max-width: 1024px) {
   .responsive-chart {
-    width: 500px;
+    width: 550px;
   }
 }
 .responsive-chart canvas {
