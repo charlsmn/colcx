@@ -16315,7 +16315,7 @@ span.continua-proceso {
 
 .estados-titulo-movil {
   position: absolute;
-  left: -15px;
+  left: -34%;
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -16328,6 +16328,12 @@ span.continua-proceso {
   color: #000;
   top: 24px;
   font-size: 13px;
+  letter-spacing: 35px;
+}
+@media only screen and (max-width: 400px) {
+  .estados-titulo-movil {
+    left: -39%;
+  }
 }
 @media only screen and (min-width: 768px) {
   .estados-titulo-movil {
