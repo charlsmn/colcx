@@ -330,10 +330,10 @@ span.continua-proceso {
     color: #000;
     top: 24px;
     font-size: 13px;
-    letter-spacing: 35px;
+    letter-spacing: 29px;
 
     @include mq_down($sm) {
-        left: -39%;
+        left: -34%;
     }
 
     @include mq_up($md) {

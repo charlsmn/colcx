@@ -16328,11 +16328,11 @@ span.continua-proceso {
   color: #000;
   top: 24px;
   font-size: 13px;
-  letter-spacing: 35px;
+  letter-spacing: 29px;
 }
 @media only screen and (max-width: 400px) {
   .estados-titulo-movil {
-    left: -39%;
+    left: -34%;
   }
 }
 @media only screen and (min-width: 768px) {
