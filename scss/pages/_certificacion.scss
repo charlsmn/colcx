@@ -341,6 +341,14 @@ span.continua-proceso {
     }
 }
 
+.certification-en {
+    @include mq_down($md) {
+        .estados-titulo-movil {
+            left: -27%;
+        }
+    }
+}
+
 .titulo-etapa-movil {
     @include mq_up($md) {
         display: none;
