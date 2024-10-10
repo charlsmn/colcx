@@ -16315,35 +16315,24 @@ span.continua-proceso {
 
 .estados-titulo-movil {
   position: absolute;
-  left: -34%;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  left: 0;
+  text-orientation: upright;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
   display: inline-block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border-bottom: 1px solid #ccc;
   font-weight: bold;
   color: #000;
-  top: 24px;
+  top: -36px;
   font-size: 13px;
-  letter-spacing: 29px;
-}
-@media only screen and (max-width: 400px) {
-  .estados-titulo-movil {
-    left: -34%;
-  }
+  letter-spacing: 14px;
 }
 @media only screen and (min-width: 768px) {
   .estados-titulo-movil {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .certification-en .estados-titulo-movil {
-    left: -27%;
   }
 }
 

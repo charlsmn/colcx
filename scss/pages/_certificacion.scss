@@ -321,31 +321,19 @@ span.continua-proceso {
 
 .estados-titulo-movil {
     position: absolute;
-    left: -34%;
-    transform: rotate(-90deg);
+    left: 0;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
     display: inline-block;
     width: fit-content;
-    border-bottom: 1px solid #ccc;
     font-weight: bold;
     color: #000;
-    top: 24px;
+    top: -36px;
     font-size: 13px;
-    letter-spacing: 29px;
-
-    @include mq_down($sm) {
-        left: -34%;
-    }
+    letter-spacing: 14px;
 
     @include mq_up($md) {
         display: none;
-    }
-}
-
-.certification-en {
-    @include mq_down($md) {
-        .estados-titulo-movil {
-            left: -27%;
-        }
     }
 }
 
