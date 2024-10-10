@@ -223,6 +223,34 @@ const documentHorizontalScroll = () => {
 
 documentHorizontalScroll()
 
+const chartHorizontalScroll = () => {
+    const chartsResponsive = document.querySelectorAll('.scroll-chart')
+    const fatherTables = document.querySelectorAll('.chart-container-scroll')
+
+    if (chartsResponsive.length === fatherTables.length) {
+        chartsResponsive.forEach((chartResponsive, index) => {
+            const fatherTable = fatherTables[index]
+
+            chartResponsive.addEventListener('scroll', () => {
+                const isAtEnd =
+                    Math.abs(
+                        chartResponsive.scrollWidth -
+                            chartResponsive.scrollLeft -
+                            chartResponsive.clientWidth
+                    ) < 1 // margen de error
+
+                if (isAtEnd) {
+                    fatherTable.classList.add('remove-arrow')
+                } else {
+                    fatherTable.classList.remove('remove-arrow')
+                }
+            })
+        })
+    }
+}
+
+chartHorizontalScroll()
+
 const popupDocumentos = () => {
     const btnPopupDocumentos = document.getElementById('btnPopupDocumentos')
     const popup = document.querySelector('.popupDocumentos')

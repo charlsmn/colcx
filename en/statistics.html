@@ -469,14 +469,16 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-md-8 align-self-center">
-                            <div class="chart-container">
+                            <div class="chart-container chart-container-scroll">
                                 <h4>
                                     <strong
                                         >COLCERs Certified by vintage</strong
                                     >
                                 </h4>
-                                <div class="responsive-chart">
-                                    <canvas id="vintage"></canvas>
+                                <div class="scroll-chart">
+                                    <div class="responsive-chart">
+                                        <canvas id="vintage"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -509,12 +511,14 @@
                     </div>
                     <div class="row justify-content-evenly">
                         <div class="col-md-6">
-                            <div class="chart-container">
+                            <div class="chart-container chart-container-scroll">
                                 <h4>
                                     <strong>Projects by stage</strong>
                                 </h4>
-                                <div class="responsive-chart">
-                                    <canvas id="etapa"></canvas>
+                                <div class="scroll-chart">
+                                    <div class="responsive-chart">
+                                        <canvas id="etapa"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -560,12 +564,14 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="chart-container">
+                            <div class="chart-container chart-container-scroll">
                                 <h4>
                                     <strong>COLCERs by year</strong>
                                 </h4>
-                                <div class="responsive-chart">
-                                    <canvas id="registrados"></canvas>
+                                <div class="scroll-chart">
+                                    <div class="responsive-chart">
+                                        <canvas id="registrados"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -965,9 +971,9 @@
                             display: false,
                         },
                         datalabels: {
-                            color: 'black',
+                            color: 'white',
                             anchor: 'end',
-                            align: 'end',
+                            align: 'start',
                             formatter: (value) => {
                                 return `${value}`
                             },
